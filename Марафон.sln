@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Марафон", "Марафон\Марафон.csproj", "{F5F16294-EFAE-4C73-BE26-9DC55581958A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5F16294-EFAE-4C73-BE26-9DC55581958A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F16294-EFAE-4C73-BE26-9DC55581958A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F16294-EFAE-4C73-BE26-9DC55581958A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F16294-EFAE-4C73-BE26-9DC55581958A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCD2D871-A0AB-42EE-A0EE-480758B76C50}
+	EndGlobalSection
+EndGlobal
