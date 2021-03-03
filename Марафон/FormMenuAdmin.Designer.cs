@@ -96,7 +96,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel3.BackColor = System.Drawing.Color.MediumPurple;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.labelTime);
             this.panel3.Location = new System.Drawing.Point(-3, 524);
@@ -117,7 +117,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel2.BackColor = System.Drawing.Color.MediumPurple;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(-2, 109);
@@ -135,6 +135,10 @@
             this.label1.Size = new System.Drawing.Size(317, 37);
             this.label1.TabIndex = 6;
             this.label1.Text = "Меню администратора";
+            // 
+            // timerMarathon
+            // 
+            this.timerMarathon.Tick += new System.EventHandler(this.timerMarathon_Tick);
             // 
             // buttonInventory
             // 
@@ -200,6 +204,7 @@
             this.Name = "FormMenuAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Меню администратора";
+            this.Load += new System.EventHandler(this.FormMenuAdmin_Load);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);

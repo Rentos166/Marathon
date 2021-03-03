@@ -206,6 +206,7 @@
             this.textBoxCardY.Size = new System.Drawing.Size(111, 26);
             this.textBoxCardY.TabIndex = 60;
             this.textBoxCardY.Text = "2024";
+            this.textBoxCardY.Enter += new System.EventHandler(this.textBoxCardY_Enter);
             this.textBoxCardY.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCardY_KeyPress);
             // 
             // textBoxCardM
@@ -218,6 +219,7 @@
             this.textBoxCardM.Size = new System.Drawing.Size(104, 26);
             this.textBoxCardM.TabIndex = 59;
             this.textBoxCardM.Text = "01";
+            this.textBoxCardM.Enter += new System.EventHandler(this.textBoxCardM_Enter);
             this.textBoxCardM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCardM_KeyPress);
             // 
             // textBoxCVC
@@ -230,6 +232,7 @@
             this.textBoxCVC.Size = new System.Drawing.Size(72, 26);
             this.textBoxCVC.TabIndex = 58;
             this.textBoxCVC.Text = "123";
+            this.textBoxCVC.Enter += new System.EventHandler(this.textBoxCVC_Enter);
             this.textBoxCVC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCVC_KeyPress);
             // 
             // textBoxNumCard
@@ -243,6 +246,7 @@
             this.textBoxNumCard.TabIndex = 57;
             this.textBoxNumCard.Text = "1234 1234 1234 1234";
             this.textBoxNumCard.TextChanged += new System.EventHandler(this.textBoxNumCard_TextChanged);
+            this.textBoxNumCard.Enter += new System.EventHandler(this.textBoxNumCard_Enter);
             this.textBoxNumCard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumCard_KeyPress);
             // 
             // textBoxNameCard
@@ -254,6 +258,8 @@
             this.textBoxNameCard.Size = new System.Drawing.Size(229, 26);
             this.textBoxNameCard.TabIndex = 56;
             this.textBoxNameCard.Text = "Владелец карты";
+            this.textBoxNameCard.TextChanged += new System.EventHandler(this.textBoxNameCard_TextChanged);
+            this.textBoxNameCard.Enter += new System.EventHandler(this.textBoxNameCard_Enter);
             // 
             // textBoxName
             // 
@@ -264,6 +270,7 @@
             this.textBoxName.Size = new System.Drawing.Size(229, 26);
             this.textBoxName.TabIndex = 55;
             this.textBoxName.Text = "Ваше имя";
+            this.textBoxName.Enter += new System.EventHandler(this.textBoxName_Enter);
             // 
             // label15
             // 

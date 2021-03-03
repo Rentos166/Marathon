@@ -93,6 +93,7 @@
             this.buttonLogout.TabIndex = 8;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // buttonBack
             // 
@@ -105,6 +106,7 @@
             this.buttonBack.TabIndex = 7;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // pictureBoxLogo
             // 
@@ -136,6 +138,10 @@
             this.labelTime.Size = new System.Drawing.Size(655, 37);
             this.labelTime.TabIndex = 5;
             this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
+            // 
+            // timerMarathon
+            // 
+            this.timerMarathon.Tick += new System.EventHandler(this.timerMarathon_Tick);
             // 
             // buttonMySpon
             // 
@@ -215,6 +221,7 @@
             this.Name = "FormRunnerMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Меню бегуна";
+            this.Load += new System.EventHandler(this.FormRunnerMenu_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);

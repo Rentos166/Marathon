@@ -138,6 +138,10 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Спасибо за Вашу спонсорскую поддержку!";
             // 
+            // timerMarathon
+            // 
+            this.timerMarathon.Tick += new System.EventHandler(this.timerMarathon_Tick);
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gold;
@@ -202,6 +206,7 @@
             this.Name = "FormSponsorConfirm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Подтверждение спонсорства";
+            this.Load += new System.EventHandler(this.FormSponsorConfirm_Load);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);

@@ -23,5 +23,32 @@ namespace Марафон
             formContacts.Show();
             this.Hide();
         }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            FormAuthorization formAuthorization = new FormAuthorization();
+            formAuthorization.Show();
+            this.Hide();
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void timerMarathon_Tick(object sender, EventArgs e)
+        {
+            DateTime marathonTime = new DateTime(2021, 11, 24, 6, 0, 0);
+            TimeSpan totalTime = marathonTime - DateTime.Now;
+
+            labelTime.Text = totalTime.Days + " дней " + totalTime.Hours + " часов и " + totalTime.Minutes + " минут до старта марафона!";
+        }
+
+        private void FormRunnerMenu_Load(object sender, EventArgs e)
+        {
+            timerMarathon.Start();
+        }
     }
 }

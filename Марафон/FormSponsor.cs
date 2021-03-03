@@ -187,6 +187,7 @@ namespace Марафон
                                 Sponsorship sponsorship = new Sponsorship();
                                 sponsorship.SponsorName = textBoxName.Text;
                                 sponsorship.Amount = Convert.ToDecimal(textBoxPrice.Text);
+                                sponsorship.RegistrationId = Convert.ToInt32(comboBoxRunner.SelectedItem.ToString().Split('.')[0]);
                                 Program.marDb.Sponsorship.Add(sponsorship);
                                 Program.marDb.SaveChanges();
                                 FormSponsorConfirm formSponsorConfirm = new FormSponsorConfirm();
@@ -204,6 +205,59 @@ namespace Марафон
             if ((e.KeyChar <= 47 || e.KeyChar >= 57) && e.KeyChar != 8)
             {
                 e.Handled = true;
+            }
+        }
+
+        private void textBoxName_Enter(object sender, EventArgs e)
+        {
+            if (textBoxName.Text == "Ваше имя")
+            {
+                textBoxName.Clear();
+            }
+        }
+
+        private void textBoxNameCard_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNameCard_Enter(object sender, EventArgs e)
+        {
+            if (textBoxNameCard.Text == "Владелец карты")
+            {
+                textBoxNameCard.Clear();
+            }
+        }
+
+        private void textBoxNumCard_Enter(object sender, EventArgs e)
+        {
+            if (textBoxNumCard.Text == "1234 1234 1234 1234")
+            {
+                textBoxNumCard.Clear();
+            }
+        }
+
+        private void textBoxCardM_Enter(object sender, EventArgs e)
+        {
+            if (textBoxCardM.Text == "01")
+            {
+                textBoxCardM.Clear();
+            }
+        }
+
+        private void textBoxCardY_Enter(object sender, EventArgs e)
+        {
+            if (textBoxCardY.Text == "2024")
+            {
+                textBoxCardY.Clear();
+            }
+        }
+
+        private void textBoxCVC_Enter(object sender, EventArgs e)
+        {
+            if (textBoxCVC.Text == "123")
+            {
+                textBoxCVC.Clear();
             }
         }
     }

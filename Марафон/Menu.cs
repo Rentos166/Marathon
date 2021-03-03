@@ -62,5 +62,10 @@ namespace Марафон
             formAuthorization.Show();
             this.Hide();
         }
+
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

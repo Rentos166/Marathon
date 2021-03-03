@@ -16,5 +16,18 @@ namespace Марафон
         {
             InitializeComponent();
         }
+
+        private void timerMarathon_Tick(object sender, EventArgs e)
+        {
+            DateTime marathonTime = new DateTime(2021, 11, 24, 6, 0, 0);
+            TimeSpan totalTime = marathonTime - DateTime.Now;
+
+            labelTime.Text = totalTime.Days + " дней " + totalTime.Hours + " часов и " + totalTime.Minutes + " минут до старта марафона!";
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            timerMarathon.Start();
+        }
     }
 }

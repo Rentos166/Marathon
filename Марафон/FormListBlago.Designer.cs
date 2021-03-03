@@ -71,6 +71,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1005, 542);
             this.panel1.TabIndex = 17;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // richTextBox2
             // 
@@ -242,6 +243,10 @@
             this.labelTime.Size = new System.Drawing.Size(655, 37);
             this.labelTime.TabIndex = 5;
             this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
+            // 
+            // timerMarathon
+            // 
+            this.timerMarathon.Tick += new System.EventHandler(this.timerMarathon_Tick);
             // 
             // FormListBlago
             // 

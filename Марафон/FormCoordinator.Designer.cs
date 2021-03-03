@@ -158,6 +158,10 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Меню координатора";
             // 
+            // timerMarathon
+            // 
+            this.timerMarathon.Tick += new System.EventHandler(this.timerMarathon_Tick);
+            // 
             // FormCoordinator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,6 +176,7 @@
             this.Name = "FormCoordinator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Меню координатора";
+            this.Load += new System.EventHandler(this.FormCoordinator_Load);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);

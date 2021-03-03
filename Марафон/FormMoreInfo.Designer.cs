@@ -196,6 +196,10 @@
             this.buttonMarathon.Text = "Marathon Skills 2016";
             this.buttonMarathon.UseVisualStyleBackColor = false;
             // 
+            // timerMarathon
+            // 
+            this.timerMarathon.Tick += new System.EventHandler(this.timerMarathon_Tick);
+            // 
             // FormMoreInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,6 +218,7 @@
             this.Name = "FormMoreInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Подробная информация";
+            this.Load += new System.EventHandler(this.FormMoreInfo_Load);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
