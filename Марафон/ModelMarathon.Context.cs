@@ -13,10 +13,10 @@ namespace Марафон
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MarathonEntities : DbContext
+    public partial class MarathonEntities1 : DbContext
     {
-        public MarathonEntities()
-            : base("name=MarathonEntities")
+        public MarathonEntities1()
+            : base("name=MarathonEntities1")
         {
         }
     

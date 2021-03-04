@@ -12,6 +12,7 @@ namespace Марафон
 {
     public partial class FormSponsor : Form
     {
+        
         void ShowRunners()
         {
             comboBoxRunner.Items.Clear();
@@ -104,6 +105,26 @@ namespace Марафон
 
         private void FormSponsor_Load(object sender, EventArgs e)
         {
+            textBoxName.Text = "Ваше имя";
+            textBoxName.ForeColor = Color.Gray;
+
+            comboBoxRunner.Text = "Иван Прудов - 204 (Russia)";
+            comboBoxRunner.ForeColor = Color.Gray;
+
+            textBoxNameCard.Text = "Владелец карты";
+            textBoxNameCard.ForeColor = Color.Gray;
+
+            textBoxNumCard.Text = "1234 1234 1234 1234";
+            textBoxNumCard.ForeColor = Color.Gray;
+
+            textBoxCardM.Text = "01";
+            textBoxCardM.ForeColor = Color.Gray;
+
+            textBoxCardY.Text = "24";
+            textBoxCardY.ForeColor = Color.Gray;
+
+            textBoxCVC.Text = "123";
+            textBoxCVC.ForeColor = Color.Gray;
             timerMarathon.Start();
         }
 
@@ -187,10 +208,16 @@ namespace Марафон
                                 Sponsorship sponsorship = new Sponsorship();
                                 sponsorship.SponsorName = textBoxName.Text;
                                 sponsorship.Amount = Convert.ToDecimal(textBoxPrice.Text);
-                                sponsorship.RegistrationId = Convert.ToInt32(comboBoxRunner.SelectedItem.ToString().Split('.')[0]);
                                 Program.marDb.Sponsorship.Add(sponsorship);
                                 Program.marDb.SaveChanges();
-                                FormSponsorConfirm formSponsorConfirm = new FormSponsorConfirm();
+                                string fond;
+                                fond = labelFond.Text;
+                                string runner;
+                                runner = comboBoxRunner.Text;
+                                int sum = 0;
+                                sum = Convert.ToInt32(textBoxPrice.Text);
+                                Close();
+                                FormSponsorConfirm formSponsorConfirm = new FormSponsorConfirm(sum, runner, fond);
                                 formSponsorConfirm.Show();
                                 this.Hide();
                             }
@@ -210,9 +237,11 @@ namespace Марафон
 
         private void textBoxName_Enter(object sender, EventArgs e)
         {
+
             if (textBoxName.Text == "Ваше имя")
             {
                 textBoxName.Clear();
+                textBoxName.ForeColor = Color.Black;
             }
         }
 
@@ -226,6 +255,7 @@ namespace Марафон
             if (textBoxNameCard.Text == "Владелец карты")
             {
                 textBoxNameCard.Clear();
+                textBoxNameCard.ForeColor = Color.Black;
             }
         }
 
@@ -234,6 +264,7 @@ namespace Марафон
             if (textBoxNumCard.Text == "1234 1234 1234 1234")
             {
                 textBoxNumCard.Clear();
+                textBoxNumCard.ForeColor = Color.Black;
             }
         }
 
@@ -242,14 +273,16 @@ namespace Марафон
             if (textBoxCardM.Text == "01")
             {
                 textBoxCardM.Clear();
+                textBoxCardM.ForeColor = Color.Black;
             }
         }
 
         private void textBoxCardY_Enter(object sender, EventArgs e)
         {
-            if (textBoxCardY.Text == "2024")
+            if (textBoxCardY.Text == "24")
             {
                 textBoxCardY.Clear();
+                textBoxCardY.ForeColor = Color.Black;
             }
         }
 
@@ -258,6 +291,84 @@ namespace Марафон
             if (textBoxCVC.Text == "123")
             {
                 textBoxCVC.Clear();
+                textBoxCVC.ForeColor = Color.Black;
+            }
+        }
+
+        private void labelFond_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxName_Leave(object sender, EventArgs e)
+        {
+            if (textBoxName.Text == null)
+            {
+                textBoxName.Text = "Ваше имя";
+                textBoxName.ForeColor = Color.Gray;
+            }
+        }
+
+        private void comboBoxRunner_Enter(object sender, EventArgs e)
+        {
+            if (comboBoxRunner.Text == "Иван Прудов - 204 (Russia)")
+            {
+                comboBoxRunner.Text = null;
+                comboBoxRunner.ForeColor = Color.Black;
+            }
+        }
+
+        private void comboBoxRunner_Leave(object sender, EventArgs e)
+        {
+            if (comboBoxRunner.Text == null)
+            {
+                comboBoxRunner.Text = "Иван Прудов - 204 (Russia)";
+                comboBoxRunner.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxNameCard_Leave(object sender, EventArgs e)
+        {
+            if (textBoxNameCard.Text == null)
+            {
+                textBoxNameCard.Text = "Владелец карты";
+                textBoxNameCard.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxNumCard_Leave(object sender, EventArgs e)
+        {
+            if (textBoxNumCard.Text == null)
+            {
+                textBoxNumCard.Text = "1234 1234 1234 1234";
+                textBoxNumCard.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxCardM_Leave(object sender, EventArgs e)
+        {
+            if (textBoxCardM.Text == null)
+            {
+                textBoxCardM.Text = "01";
+                textBoxCardM.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxCardY_Leave(object sender, EventArgs e)
+        {
+            if (textBoxCardY.Text == null)
+            {
+                textBoxCardY.Text = "24";
+                textBoxCardY.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxCVC_Leave(object sender, EventArgs e)
+        {
+            if (textBoxCVC.Text == null)
+            {
+                textBoxCVC.Text = "123";
+                textBoxCVC.ForeColor = Color.Gray;
             }
         }
     }

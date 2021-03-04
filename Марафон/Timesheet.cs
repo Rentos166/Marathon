@@ -15,10 +15,10 @@ namespace Марафон
     public partial class Timesheet
     {
         public int TimesheetId { get; set; }
-        public int StaffId { get; set; }
-        public System.DateTime StartDateTime { get; set; }
-        public System.DateTime EndDateTime { get; set; }
-        public string PaymentAmount { get; set; }
+        public Nullable<int> StaffId { get; set; }
+        public Nullable<System.DateTime> StartDateTime { get; set; }
+        public Nullable<System.DateTime> EndDateTime { get; set; }
+        public Nullable<decimal> PayAmount { get; set; }
     
         public virtual Staff Staff { get; set; }
     }

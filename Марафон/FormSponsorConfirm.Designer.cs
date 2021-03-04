@@ -164,6 +164,7 @@
             this.labelSum.Size = new System.Drawing.Size(119, 75);
             this.labelSum.TabIndex = 41;
             this.labelSum.Text = "$50";
+            this.labelSum.Click += new System.EventHandler(this.labelSum_Click);
             // 
             // textBoxFond
             // 

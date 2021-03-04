@@ -20,12 +20,14 @@ namespace Марафон
             this.Staff = new HashSet<Staff>();
         }
     
-        public short PositionId { get; set; }
+        public int PositionId { get; set; }
         public string PositionName { get; set; }
-        public string PositionDescription { get; set; }
+        public string PositionDescrption { get; set; }
         public string PayPeriod { get; set; }
-        public string PayRate { get; set; }
+        public Nullable<decimal> PayRate { get; set; }
     
+        public virtual Position Position1 { get; set; }
+        public virtual Position Position2 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Staff> Staff { get; set; }
     }

@@ -12,9 +12,12 @@ namespace Марафон
 {
     public partial class FormSponsorConfirm : Form
     {
-        public FormSponsorConfirm()
+        public FormSponsorConfirm(int sum, string runner, string fond)
         {
             InitializeComponent();
+            labelSum.Text = Convert.ToString("$"+sum);
+            textBoxRunner.Text = runner;
+            textBoxFond.Text = fond;
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
@@ -35,6 +38,11 @@ namespace Марафон
         private void FormSponsorConfirm_Load(object sender, EventArgs e)
         {
             timerMarathon.Start();
+        }
+
+        private void labelSum_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

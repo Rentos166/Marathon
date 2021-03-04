@@ -67,7 +67,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.labelFond = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -188,31 +188,34 @@
             // comboBoxRunner
             // 
             this.comboBoxRunner.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxRunner.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBoxRunner.ForeColor = System.Drawing.Color.DarkGray;
+            this.comboBoxRunner.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxRunner.ForeColor = System.Drawing.Color.Black;
             this.comboBoxRunner.FormattingEnabled = true;
             this.comboBoxRunner.Location = new System.Drawing.Point(185, 384);
             this.comboBoxRunner.Name = "comboBoxRunner";
-            this.comboBoxRunner.Size = new System.Drawing.Size(229, 27);
+            this.comboBoxRunner.Size = new System.Drawing.Size(229, 28);
             this.comboBoxRunner.TabIndex = 61;
+            this.comboBoxRunner.Enter += new System.EventHandler(this.comboBoxRunner_Enter);
+            this.comboBoxRunner.Leave += new System.EventHandler(this.comboBoxRunner_Leave);
             // 
             // textBoxCardY
             // 
             this.textBoxCardY.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxCardY.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxCardY.ForeColor = System.Drawing.Color.Black;
             this.textBoxCardY.Location = new System.Drawing.Point(303, 529);
             this.textBoxCardY.MaxLength = 4;
             this.textBoxCardY.Name = "textBoxCardY";
             this.textBoxCardY.Size = new System.Drawing.Size(111, 26);
             this.textBoxCardY.TabIndex = 60;
-            this.textBoxCardY.Text = "2024";
+            this.textBoxCardY.Text = "24";
             this.textBoxCardY.Enter += new System.EventHandler(this.textBoxCardY_Enter);
             this.textBoxCardY.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCardY_KeyPress);
+            this.textBoxCardY.Leave += new System.EventHandler(this.textBoxCardY_Leave);
             // 
             // textBoxCardM
             // 
             this.textBoxCardM.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxCardM.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxCardM.ForeColor = System.Drawing.Color.Black;
             this.textBoxCardM.Location = new System.Drawing.Point(185, 529);
             this.textBoxCardM.MaxLength = 2;
             this.textBoxCardM.Name = "textBoxCardM";
@@ -221,11 +224,12 @@
             this.textBoxCardM.Text = "01";
             this.textBoxCardM.Enter += new System.EventHandler(this.textBoxCardM_Enter);
             this.textBoxCardM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCardM_KeyPress);
+            this.textBoxCardM.Leave += new System.EventHandler(this.textBoxCardM_Leave);
             // 
             // textBoxCVC
             // 
             this.textBoxCVC.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxCVC.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxCVC.ForeColor = System.Drawing.Color.Black;
             this.textBoxCVC.Location = new System.Drawing.Point(185, 575);
             this.textBoxCVC.MaxLength = 3;
             this.textBoxCVC.Name = "textBoxCVC";
@@ -234,11 +238,12 @@
             this.textBoxCVC.Text = "123";
             this.textBoxCVC.Enter += new System.EventHandler(this.textBoxCVC_Enter);
             this.textBoxCVC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCVC_KeyPress);
+            this.textBoxCVC.Leave += new System.EventHandler(this.textBoxCVC_Leave);
             // 
             // textBoxNumCard
             // 
             this.textBoxNumCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxNumCard.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxNumCard.ForeColor = System.Drawing.Color.Black;
             this.textBoxNumCard.Location = new System.Drawing.Point(185, 479);
             this.textBoxNumCard.MaxLength = 16;
             this.textBoxNumCard.Name = "textBoxNumCard";
@@ -248,11 +253,12 @@
             this.textBoxNumCard.TextChanged += new System.EventHandler(this.textBoxNumCard_TextChanged);
             this.textBoxNumCard.Enter += new System.EventHandler(this.textBoxNumCard_Enter);
             this.textBoxNumCard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumCard_KeyPress);
+            this.textBoxNumCard.Leave += new System.EventHandler(this.textBoxNumCard_Leave);
             // 
             // textBoxNameCard
             // 
             this.textBoxNameCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxNameCard.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxNameCard.ForeColor = System.Drawing.Color.Black;
             this.textBoxNameCard.Location = new System.Drawing.Point(185, 430);
             this.textBoxNameCard.Name = "textBoxNameCard";
             this.textBoxNameCard.Size = new System.Drawing.Size(229, 26);
@@ -260,17 +266,19 @@
             this.textBoxNameCard.Text = "Владелец карты";
             this.textBoxNameCard.TextChanged += new System.EventHandler(this.textBoxNameCard_TextChanged);
             this.textBoxNameCard.Enter += new System.EventHandler(this.textBoxNameCard_Enter);
+            this.textBoxNameCard.Leave += new System.EventHandler(this.textBoxNameCard_Leave);
             // 
             // textBoxName
             // 
             this.textBoxName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxName.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxName.ForeColor = System.Drawing.Color.Black;
             this.textBoxName.Location = new System.Drawing.Point(185, 341);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(229, 26);
             this.textBoxName.TabIndex = 55;
             this.textBoxName.Text = "Ваше имя";
             this.textBoxName.Enter += new System.EventHandler(this.textBoxName_Enter);
+            this.textBoxName.Leave += new System.EventHandler(this.textBoxName_Leave);
             // 
             // label15
             // 
@@ -512,16 +520,17 @@
             this.label4.TabIndex = 39;
             this.label4.Text = "Информация о спонсоре";
             // 
-            // label21
+            // labelFond
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label21.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label21.Location = new System.Drawing.Point(635, 325);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(177, 37);
-            this.label21.TabIndex = 71;
-            this.label21.Text = "Фонд Кошек";
+            this.labelFond.AutoSize = true;
+            this.labelFond.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFond.ForeColor = System.Drawing.Color.GhostWhite;
+            this.labelFond.Location = new System.Drawing.Point(631, 326);
+            this.labelFond.Name = "labelFond";
+            this.labelFond.Size = new System.Drawing.Size(177, 37);
+            this.labelFond.TabIndex = 71;
+            this.labelFond.Text = "Фонд Кошек";
+            this.labelFond.Leave += new System.EventHandler(this.labelFond_Leave);
             // 
             // FormSponsor
             // 
@@ -529,7 +538,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(922, 687);
-            this.Controls.Add(this.label21);
+            this.Controls.Add(this.labelFond);
             this.Controls.Add(this.buttonPlus);
             this.Controls.Add(this.buttonMinus);
             this.Controls.Add(this.buttonCancel);
@@ -617,6 +626,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label labelFond;
     }
 }

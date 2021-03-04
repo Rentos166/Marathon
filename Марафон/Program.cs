@@ -8,7 +8,7 @@ namespace Марафон
 {
     static class Program
     {
-        public static MarathonEntities marDb = new MarathonEntities();
+        public static MarathonEntities1 marDb = new MarathonEntities1();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
