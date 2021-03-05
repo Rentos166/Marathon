@@ -184,6 +184,7 @@
             this.label17.Size = new System.Drawing.Size(309, 37);
             this.label17.TabIndex = 62;
             this.label17.Text = "Благотворительность";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // comboBoxRunner
             // 

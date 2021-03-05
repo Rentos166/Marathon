@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Марафон
 {
@@ -18,8 +19,8 @@ namespace Марафон
             comboBoxRunner.Items.Clear();
             foreach(Runner runners in Program.marDb.Runner)
             {
-                string[] item = { runners.User.FirstName + " ", runners.User.LastName, "(" + runners.RunnerId.ToString() + ") из", runners.Country.CountryCode };
-                comboBoxRunner.Items.Add(string.Join(" ", item));
+                string[] item1 = { runners.User.FirstName + " ", runners.User.LastName,"(" + runners.RunnerId.ToString() + ") из", runners.Country.CountryCode };
+                comboBoxRunner.Items.Add(string.Join(" ", item1));
             }
         }
         public FormSponsor()
@@ -73,7 +74,7 @@ namespace Марафон
 
         private void textBoxNumCard_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && e.KeyChar != 8)
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && e.KeyChar != 8 && e.KeyChar != 32)
             {
                 e.Handled = true;
             }
@@ -97,7 +98,7 @@ namespace Марафон
 
         private void textBoxCVC_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar <= 47 || e.KeyChar >= 57) && e.KeyChar != 8)
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && e.KeyChar != 8)
             {
                 e.Handled = true;
             }
@@ -120,7 +121,7 @@ namespace Марафон
             textBoxCardM.Text = "01";
             textBoxCardM.ForeColor = Color.Gray;
 
-            textBoxCardY.Text = "24";
+            textBoxCardY.Text = "2024";
             textBoxCardY.ForeColor = Color.Gray;
 
             textBoxCVC.Text = "123";
@@ -208,6 +209,7 @@ namespace Марафон
                                 Sponsorship sponsorship = new Sponsorship();
                                 sponsorship.SponsorName = textBoxName.Text;
                                 sponsorship.Amount = Convert.ToDecimal(textBoxPrice.Text);
+                                sponsorship.RegistrationId = Convert.ToInt32(comboBoxRunner.SelectedItem.ToString().Split('.')[0]);
                                 Program.marDb.Sponsorship.Add(sponsorship);
                                 Program.marDb.SaveChanges();
                                 string fond;
@@ -279,7 +281,7 @@ namespace Марафон
 
         private void textBoxCardY_Enter(object sender, EventArgs e)
         {
-            if (textBoxCardY.Text == "24")
+            if (textBoxCardY.Text == "2024")
             {
                 textBoxCardY.Clear();
                 textBoxCardY.ForeColor = Color.Black;
@@ -358,7 +360,7 @@ namespace Марафон
         {
             if (textBoxCardY.Text == null)
             {
-                textBoxCardY.Text = "24";
+                textBoxCardY.Text = "2024";
                 textBoxCardY.ForeColor = Color.Gray;
             }
         }
@@ -370,6 +372,11 @@ namespace Марафон
                 textBoxCVC.Text = "123";
                 textBoxCVC.ForeColor = Color.Gray;
             }
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
