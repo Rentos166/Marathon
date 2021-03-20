@@ -38,7 +38,6 @@
             this.labelMoreInfo = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBoxRunner = new System.Windows.Forms.ComboBox();
             this.textBoxCardY = new System.Windows.Forms.TextBox();
             this.textBoxCardM = new System.Windows.Forms.TextBox();
             this.textBoxCVC = new System.Windows.Forms.TextBox();
@@ -67,7 +66,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.labelFond = new System.Windows.Forms.Label();
+            this.textBoxFond = new System.Windows.Forms.TextBox();
+            this.comboBoxRunner = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -156,7 +156,7 @@
             this.labelMoreInfo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelMoreInfo.Font = new System.Drawing.Font("Century", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelMoreInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.labelMoreInfo.Location = new System.Drawing.Point(818, 322);
+            this.labelMoreInfo.Location = new System.Drawing.Point(837, 312);
             this.labelMoreInfo.Name = "labelMoreInfo";
             this.labelMoreInfo.Size = new System.Drawing.Size(30, 41);
             this.labelMoreInfo.TabIndex = 65;
@@ -185,19 +185,6 @@
             this.label17.TabIndex = 62;
             this.label17.Text = "Благотворительность";
             this.label17.Click += new System.EventHandler(this.label17_Click);
-            // 
-            // comboBoxRunner
-            // 
-            this.comboBoxRunner.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxRunner.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBoxRunner.ForeColor = System.Drawing.Color.Black;
-            this.comboBoxRunner.FormattingEnabled = true;
-            this.comboBoxRunner.Location = new System.Drawing.Point(185, 384);
-            this.comboBoxRunner.Name = "comboBoxRunner";
-            this.comboBoxRunner.Size = new System.Drawing.Size(229, 28);
-            this.comboBoxRunner.TabIndex = 61;
-            this.comboBoxRunner.Enter += new System.EventHandler(this.comboBoxRunner_Enter);
-            this.comboBoxRunner.Leave += new System.EventHandler(this.comboBoxRunner_Leave);
             // 
             // textBoxCardY
             // 
@@ -246,7 +233,7 @@
             this.textBoxNumCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxNumCard.ForeColor = System.Drawing.Color.Black;
             this.textBoxNumCard.Location = new System.Drawing.Point(185, 479);
-            this.textBoxNumCard.MaxLength = 16;
+            this.textBoxNumCard.MaxLength = 19;
             this.textBoxNumCard.Name = "textBoxNumCard";
             this.textBoxNumCard.Size = new System.Drawing.Size(229, 26);
             this.textBoxNumCard.TabIndex = 57;
@@ -521,17 +508,32 @@
             this.label4.TabIndex = 39;
             this.label4.Text = "Информация о спонсоре";
             // 
-            // labelFond
+            // textBoxFond
             // 
-            this.labelFond.AutoSize = true;
-            this.labelFond.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelFond.ForeColor = System.Drawing.Color.GhostWhite;
-            this.labelFond.Location = new System.Drawing.Point(631, 326);
-            this.labelFond.Name = "labelFond";
-            this.labelFond.Size = new System.Drawing.Size(177, 37);
-            this.labelFond.TabIndex = 71;
-            this.labelFond.Text = "Фонд Кошек";
-            this.labelFond.Leave += new System.EventHandler(this.labelFond_Leave);
+            this.textBoxFond.BackColor = System.Drawing.Color.SeaGreen;
+            this.textBoxFond.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxFond.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxFond.ForeColor = System.Drawing.Color.White;
+            this.textBoxFond.Location = new System.Drawing.Point(616, 325);
+            this.textBoxFond.Multiline = true;
+            this.textBoxFond.Name = "textBoxFond";
+            this.textBoxFond.ReadOnly = true;
+            this.textBoxFond.Size = new System.Drawing.Size(215, 42);
+            this.textBoxFond.TabIndex = 71;
+            this.textBoxFond.Text = "Выберите бегуна";
+            this.textBoxFond.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // comboBoxRunner
+            // 
+            this.comboBoxRunner.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRunner.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxRunner.FormattingEnabled = true;
+            this.comboBoxRunner.Location = new System.Drawing.Point(185, 383);
+            this.comboBoxRunner.Name = "comboBoxRunner";
+            this.comboBoxRunner.Size = new System.Drawing.Size(229, 28);
+            this.comboBoxRunner.TabIndex = 72;
+            this.comboBoxRunner.SelectedIndexChanged += new System.EventHandler(this.comboBoxRunner_SelectedIndexChanged);
+            this.comboBoxRunner.TextChanged += new System.EventHandler(this.comboBoxRunner_TextChanged_1);
             // 
             // FormSponsor
             // 
@@ -539,7 +541,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(922, 687);
-            this.Controls.Add(this.labelFond);
+            this.Controls.Add(this.comboBoxRunner);
+            this.Controls.Add(this.textBoxFond);
             this.Controls.Add(this.buttonPlus);
             this.Controls.Add(this.buttonMinus);
             this.Controls.Add(this.buttonCancel);
@@ -549,7 +552,6 @@
             this.Controls.Add(this.labelMoreInfo);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.comboBoxRunner);
             this.Controls.Add(this.textBoxCardY);
             this.Controls.Add(this.textBoxCardM);
             this.Controls.Add(this.textBoxCVC);
@@ -598,7 +600,6 @@
         private System.Windows.Forms.Label labelMoreInfo;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBoxRunner;
         private System.Windows.Forms.TextBox textBoxCardY;
         private System.Windows.Forms.TextBox textBoxCardM;
         private System.Windows.Forms.TextBox textBoxCVC;
@@ -627,6 +628,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label labelFond;
+        private System.Windows.Forms.TextBox textBoxFond;
+        private System.Windows.Forms.ComboBox comboBoxRunner;
     }
 }

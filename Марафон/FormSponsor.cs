@@ -13,27 +13,15 @@ namespace Марафон
 {
     public partial class FormSponsor : Form
     {
-        
-        void ShowRunners()
-        {
-            comboBoxRunner.Items.Clear();
-            foreach(Runner runners in Program.marDb.Runner)
-            {
-                string[] item1 = { runners.User.FirstName + " ", runners.User.LastName,"(" + runners.RunnerId.ToString() + ") из", runners.Country.CountryCode };
-                comboBoxRunner.Items.Add(string.Join(" ", item1));
-            }
-        }
         public FormSponsor()
         {
             InitializeComponent();
-            ShowRunners();
         }
 
         private void label19_Click(object sender, EventArgs e)
         {
-            FormSponsorMoreInfoFond moreInfoFond = new FormSponsorMoreInfoFond();
+            FormSponsorMoreInfoFond moreInfoFond = new FormSponsorMoreInfoFond(textBoxFond.Text);
             moreInfoFond.Show();
-            this.Hide();
         }
 
         private void label12_Click(object sender, EventArgs e)
@@ -127,6 +115,23 @@ namespace Марафон
             textBoxCVC.Text = "123";
             textBoxCVC.ForeColor = Color.Gray;
             timerMarathon.Start();
+            SqlConnection conn = new SqlConnection(Connection.GetString());
+            conn.Open();
+
+            SqlCommand command = new SqlCommand("SELECT RegistrationEvent.BibNumber, Runner.RunnerId, Users.FirstName, Users.LastName, Country.CountryName FROM Users,Runner, Country, RegistrationEvent, Registration WHERE Country.CountryCode = Runner.CountryCode AND Users.RoleId = 'R' AND Users.Email = Runner.Email AND Registration.RunnerId = Runner.RunnerId AND Registration.RegistrationId = RegistrationEvent.RegistrationId ORDER BY Users.FirstName", conn);
+
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    ComboBoxItem item = new ComboBoxItem();
+                    item.text = reader["FirstName"].ToString() + " " + reader["LastName"].ToString() + " - " + reader["BibNumber"].ToString() + " (" + reader["CountryName"].ToString() + ")";
+                    item.value = reader["RunnerId"].ToString();
+                    comboBoxRunner.Items.Add(item);
+                }
+            }
+
+            conn.Close();
         }
 
         private void buttonMinus_Click(object sender, EventArgs e)
@@ -206,20 +211,12 @@ namespace Марафон
                             }
                             else
                             {
-                                Sponsorship sponsorship = new Sponsorship();
-                                sponsorship.SponsorName = textBoxName.Text;
-                                sponsorship.Amount = Convert.ToDecimal(textBoxPrice.Text);
-                                sponsorship.RegistrationId = Convert.ToInt32(comboBoxRunner.SelectedItem.ToString().Split('.')[0]);
-                                Program.marDb.Sponsorship.Add(sponsorship);
-                                Program.marDb.SaveChanges();
-                                string fond;
-                                fond = labelFond.Text;
-                                string runner;
-                                runner = comboBoxRunner.Text;
-                                int sum = 0;
-                                sum = Convert.ToInt32(textBoxPrice.Text);
-                                Close();
-                                FormSponsorConfirm formSponsorConfirm = new FormSponsorConfirm(sum, runner, fond);
+                                SqlConnection conn = new SqlConnection(Connection.GetString());
+                                conn.Open();
+                                SqlCommand command = new SqlCommand("UPDATE Registration Set SponsorshipTarget = SponsorshipTarget + " + textBoxPrice.Text + " WHERE RunnerId = '" + (comboBoxRunner.SelectedItem as ComboBoxItem).value + "'", conn);
+
+                                command.ExecuteNonQuery();
+                                FormSponsorConfirm formSponsorConfirm = new FormSponsorConfirm((comboBoxRunner.SelectedItem as ComboBoxItem).value, textBoxFond.Text, textBoxPrice.Text);
                                 formSponsorConfirm.Show();
                                 this.Hide();
                             }
@@ -377,6 +374,30 @@ namespace Марафон
         private void label17_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBoxRunner_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBoxRunner_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxRunner_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(Connection.GetString());
+            conn.Open();
+            SqlCommand command = new SqlCommand("SELECT TOP(1) Charity.CharityName, Charity.CharityId FROM Charity, Registration WHERE Charity.CharityId = Registration.CharityId AND Registration.RunnerId = " + (comboBoxRunner.SelectedItem as ComboBoxItem).value + "", conn);
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    textBoxFond.Text = reader["CharityName"].ToString();
+                }
+            }
         }
     }
 }

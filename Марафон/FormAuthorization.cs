@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Марафон
 {
@@ -52,50 +53,44 @@ namespace Марафон
             }
             else
             {
-                bool key = false;
-                //ищем в базе данных пользователя с такими логином и паролем и запоминаем их
-                foreach (User user in Program.marDb.User)
+                SqlConnection conn = new SqlConnection(Connection.GetString());
+                conn.Open();
+
+                SqlCommand command = new SqlCommand("SELECT * FROM Users WHERE Email = '" + textBoxEmail.Text + "' AND Password = '" + textBoxPassword.Text + "'", conn);
+
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    if (textBoxEmail.Text == user.Email && textBoxPassword.Text == user.Password)
+                    if (!reader.HasRows)
                     {
-                        key = true;
-                        users.email = user.Email;
-                        users.password = user.Password;
-                        users.type = user.RoleId;
-                        users.fn = user.FirstName;
-                        users.ln = user.LastName;
+                        MessageBox.Show("Пользователь с таким email и паролем не найден!. Удостоверьтесь в корректности введенных данных.", "Оповещение системы");
                     }
-                }
-                if (!key)
-                {
-                    MessageBox.Show("Проверьте данные", "Пользователь не найден", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                   
-                    if (users.type == "R")
+                    else
                     {
-                        MessageBox.Show("Вы вошли в систему как: Бегун, " + users.fn + " " + users.ln, "Авторизация успешна", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Close();
-                        FormRunnerMenu runnerMenu = new FormRunnerMenu();
-                        runnerMenu.Show();
-                        this.Hide();
-                    }
-                    else if (users.type == "A")
-                    {
-                        MessageBox.Show("Вы вошли в систему как: Администратор, " + users.fn + " " + users.ln, "Авторизация успешна", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Close();
-                        FormMenuAdmin administratorMenu = new FormMenuAdmin();
-                        administratorMenu.Show();
-                        this.Hide();
-                    }
-                    else if (users.type == "C")
-                    {
-                        MessageBox.Show("Вы вошли в систему как: Координатор, " + users.fn + " " + users.ln, "Авторизация успешна", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Close();
-                        FormCoordinator coordinator = new FormCoordinator();
-                        coordinator.Show();
-                        this.Hide();
+                        while (reader.Read())
+                        {
+                            if (reader["RoleId"].ToString() == "R")
+                            {
+                                //MessageBox.Show("Runner");
+                                FormRunnerMenu fm = new FormRunnerMenu(reader["Email"].ToString());
+                                fm.Show();
+                                this.Hide();
+                            }
+                            if (reader["RoleId"].ToString() == "A")
+                            {
+                                //MessageBox.Show("Runner");
+                                FormMenuAdmin fm = new FormMenuAdmin(reader["Email"].ToString());
+                                fm.Show();
+                                this.Hide();
+                            }
+                            if (reader["RoleId"].ToString() == "C")
+                            {
+                                //MessageBox.Show("Runner");
+                                FormCoordinator fm = new FormCoordinator(reader["Email"].ToString());
+                                fm.Show();
+                                this.Hide();
+                            }
+
+                        }
                     }
                 }
             }

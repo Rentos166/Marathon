@@ -12,8 +12,10 @@ namespace Марафон
 {
     public partial class FormMenuAdmin : Form
     {
-        public FormMenuAdmin()
+        public string email;
+        public FormMenuAdmin(string email)
         {
+            this.email = email;
             InitializeComponent();
         }
 

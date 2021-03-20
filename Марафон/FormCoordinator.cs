@@ -12,8 +12,10 @@ namespace Марафон
 {
     public partial class FormCoordinator : Form
     {
-        public FormCoordinator()
+        public string email;
+        public FormCoordinator(string email)
         {
+            this.email = email;
             InitializeComponent();
         }
 

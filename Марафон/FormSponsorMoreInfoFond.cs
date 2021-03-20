@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Марафон
 {
     public partial class FormSponsorMoreInfoFond : Form
     {
-        public FormSponsorMoreInfoFond()
+        public string charityName;
+        public FormSponsorMoreInfoFond(string charityName)
         {
+            this.charityName = charityName;
             InitializeComponent();
         }
 
@@ -24,7 +27,28 @@ namespace Марафон
 
         private void FormSponsorMoreInfoFond_Load(object sender, EventArgs e)
         {
+            using (SqlConnection conn = new SqlConnection(Connection.GetString()))
+            {
+                conn.Open();
+                SqlCommand command = new SqlCommand("SELECT * FROM Charity WHERE CharityName = '" + charityName + "'", conn);
 
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        try
+                        {
+                            pictureBoxLogoFond.Image = Image.FromFile("logo/" + reader["CharityLogo"].ToString());
+                        }
+                        catch (Exception ex) { }
+
+                        richTextBoxInfo.Text = reader["CharityDescription"].ToString();
+                        textBoxFond.Text = reader["CharityName"].ToString();
+
+                    }
+
+                }
+            }
         }
     }
 }

@@ -153,6 +153,7 @@
             this.button1.TabIndex = 37;
             this.button1.Text = "Назад";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelSum
             // 
@@ -168,9 +169,10 @@
             // 
             // textBoxFond
             // 
+            this.textBoxFond.BackColor = System.Drawing.Color.SeaGreen;
             this.textBoxFond.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxFond.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxFond.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxFond.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textBoxFond.Location = new System.Drawing.Point(169, 355);
             this.textBoxFond.Name = "textBoxFond";
             this.textBoxFond.ReadOnly = true;
@@ -181,8 +183,10 @@
             // 
             // textBoxRunner
             // 
+            this.textBoxRunner.BackColor = System.Drawing.Color.SeaGreen;
             this.textBoxRunner.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxRunner.Font = new System.Drawing.Font("Arial Narrow", 27.75F);
+            this.textBoxRunner.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textBoxRunner.Location = new System.Drawing.Point(169, 299);
             this.textBoxRunner.Name = "textBoxRunner";
             this.textBoxRunner.ReadOnly = true;

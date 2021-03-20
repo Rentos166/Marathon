@@ -12,8 +12,10 @@ namespace Марафон
 {
     public partial class FormRunnerMenu : Form
     {
-        public FormRunnerMenu()
+        public string email;
+        public FormRunnerMenu(string email)
         {
+            this.email = email;
             InitializeComponent();
         }
 

@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBoxInfoBlago.Text" xml:space="preserve">
-    <value>Фонд Кошек это Кировская организация, которая помогает бездомным животным обрести свой дом. У них есть свои питомники, где они выхаживают бездомных животных и отдают этих животных в хорошие руки, в новую семью!</value>
-  </data>
 </root>

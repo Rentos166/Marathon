@@ -58,6 +58,8 @@
     <Compile Include="Charity.cs">
       <DependentUpon>ModelMarathon.tt</DependentUpon>
     </Compile>
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="Connection.cs" />
     <Compile Include="Country.cs">
       <DependentUpon>ModelMarathon.tt</DependentUpon>
     </Compile>
