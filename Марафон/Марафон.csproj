@@ -87,6 +87,18 @@
     <Compile Include="FormCoordinator.Designer.cs">
       <DependentUpon>FormCoordinator.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInfoAboutMarathon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfoAboutMarathon.Designer.cs">
+      <DependentUpon>FormInfoAboutMarathon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInteractiveMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInteractiveMap.Designer.cs">
+      <DependentUpon>FormInteractiveMap.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormListBlago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +122,24 @@
     </Compile>
     <Compile Include="FormRegistration.Designer.cs">
       <DependentUpon>FormRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrationMarathon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrationMarathon.Designer.cs">
+      <DependentUpon>FormRegistrationMarathon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrationMarathonConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrationMarathonConfirm.Designer.cs">
+      <DependentUpon>FormRegistrationMarathonConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRunnerEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRunnerEditProfile.Designer.cs">
+      <DependentUpon>FormRunnerEditProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRunnerMenu.cs">
       <SubType>Form</SubType>
@@ -215,6 +245,12 @@
     <EmbeddedResource Include="FormCoordinator.resx">
       <DependentUpon>FormCoordinator.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInfoAboutMarathon.resx">
+      <DependentUpon>FormInfoAboutMarathon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInteractiveMap.resx">
+      <DependentUpon>FormInteractiveMap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormListBlago.resx">
       <DependentUpon>FormListBlago.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +262,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationMarathon.resx">
+      <DependentUpon>FormRegistrationMarathon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationMarathonConfirm.resx">
+      <DependentUpon>FormRegistrationMarathonConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRunnerEditProfile.resx">
+      <DependentUpon>FormRunnerEditProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRunnerMenu.resx">
       <DependentUpon>FormRunnerMenu.cs</DependentUpon>
@@ -293,6 +338,12 @@
       <DependentUpon>ModelMarathon.edmx</DependentUpon>
       <LastGenOutput>ModelMarathon.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\map-icon-start.png" />
+    <None Include="Resources\teatro-municipal.jpg" />
+    <None Include="Resources\marathon-image.jpg" />
+    <None Include="Resources\ibirapuera-park-lake.jpg" />
+    <None Include="Resources\banco-banespa.jpg" />
+    <None Include="Resources\marathon-skills-2017-marathon-map.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

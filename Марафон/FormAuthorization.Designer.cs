@@ -184,9 +184,9 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.buttonBack);
             this.panel4.Controls.Add(this.pictureBoxLogo);
-            this.panel4.Location = new System.Drawing.Point(-10, 1);
+            this.panel4.Location = new System.Drawing.Point(-10, -2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1005, 105);
+            this.panel4.Size = new System.Drawing.Size(1005, 108);
             this.panel4.TabIndex = 25;
             // 
             // pictureBoxLogo

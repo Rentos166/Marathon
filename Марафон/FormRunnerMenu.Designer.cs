@@ -191,6 +191,7 @@
             this.buttonRedProfile.TabIndex = 27;
             this.buttonRedProfile.Text = "Редактирование профиля";
             this.buttonRedProfile.UseVisualStyleBackColor = false;
+            this.buttonRedProfile.Click += new System.EventHandler(this.buttonRedProfile_Click);
             // 
             // buttonRegforMar
             // 
@@ -203,6 +204,7 @@
             this.buttonRegforMar.TabIndex = 23;
             this.buttonRegforMar.Text = "Регистрация на марафон";
             this.buttonRegforMar.UseVisualStyleBackColor = false;
+            this.buttonRegforMar.Click += new System.EventHandler(this.buttonRegforMar_Click);
             // 
             // FormRunnerMenu
             // 

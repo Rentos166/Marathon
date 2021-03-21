@@ -8,29 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Data.SqlClient;
 
 namespace Марафон
 {
     public partial class FormRegistration : Form
     {
-        void ShowGender()
-        {
-            comboBoxGender.Items.Clear();
-            foreach (Gender gender in Program.marDb.Gender)
-            {
-                string[] item = { gender.Gender1 };
-                comboBoxGender.Items.Add(string.Join(" ", item));
-            }
-        }
-        void ShowCountry()
-        {
-            comboBoxCountry.Items.Clear();
-            foreach (Country country in Program.marDb.Country)
-            {
-                string[] item = { country.CountryCode };
-                comboBoxCountry.Items.Add(string.Join(" ", item));
-            }
-        }
         public FormRegistration()
         {
             InitializeComponent();
@@ -39,8 +22,34 @@ namespace Марафон
         private void FormRegistration_Load(object sender, EventArgs e)
         {
             timerMarathon.Start();
-            ShowGender();
-            ShowCountry();
+            openFileDialogMar.CheckFileExists = true;
+            openFileDialogMar.AddExtension = true;
+            openFileDialogMar.Multiselect = true;
+            openFileDialogMar.Filter = "Image Files(*.BMP; *.JPG; *.GIF)| *.BMP; *.JPG; *.GIF | All files(*.*) | *.*";
+            SqlConnection conn = new SqlConnection(Connection.GetString());
+            conn.Open();
+            SqlCommand commandGender = new SqlCommand("SELECT * FROM Gender", conn);
+            using (SqlDataReader reader = commandGender.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    ComboBoxItem item = new ComboBoxItem();
+                    item.text = reader["Gender"].ToString();
+                    item.value = reader["Gender"].ToString();
+                    comboBoxGender.Items.Add(item);
+                }
+            }
+            SqlCommand commandCountry = new SqlCommand("SELECT * FROM Country ORDER BY CountryName", conn);
+            using (SqlDataReader reader = commandCountry.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    ComboBoxItem item = new ComboBoxItem();
+                    item.text = reader["CountryName"].ToString();
+                    item.value = reader["CountryCode"].ToString();
+                    comboBoxCountry.Items.Add(item);
+                }
+            }
         }
 
         private void timerMarathon_Tick(object sender, EventArgs e)
@@ -52,11 +61,6 @@ namespace Марафон
 
         private void buttonShow_Click(object sender, EventArgs e)
         {
-            openFileDialogMar.CheckFileExists = true;
-            openFileDialogMar.AddExtension = true;
-            openFileDialogMar.Multiselect = true;
-            openFileDialogMar.Filter = "Image Files(*.BMP; *.JPG; *.GIF)| *.BMP; *.JPG; *.GIF | All files(*.*) | *.*";
-
             if (openFileDialogMar.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 textBoxPic.Text = openFileDialogMar.FileName;
@@ -81,11 +85,9 @@ namespace Марафон
 
         private void buttonReg_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (textBoxFirstName.Text != "" && textBoxEmail.Text != "" && textBoxPassword.Text != "" &&
-                    textBoxConfirmPassword.Text != "" && textBoxLastName.Text != "" && comboBoxGender.SelectedItem != null &&
-                    comboBoxCountry.SelectedItem != null && dateTimePickerBirth.Value != null)
+                if (textBoxFirstName.Text == "" && textBoxEmail.Text == "" && textBoxPassword.Text == "" &&
+                    textBoxConfirmPassword.Text == "" && textBoxLastName.Text == "" && comboBoxGender.SelectedItem == null &&
+                    comboBoxCountry.SelectedItem == null && dateTimePickerBirth.Value == null)
                 {
                     MessageBox.Show("Одно или несколько обязательных полей для ввода (отмеченных знаком *) не были заполнены!", "Оповещение системы");
                 }
@@ -153,27 +155,94 @@ namespace Марафон
                                 }
                                 else
                                 {
-                                    Runner runner = new Runner();
-                                    runner.Email = textBoxEmail.Text;
-                                    runner.User.Email = textBoxEmail.Text;
-                                    runner.User.Password = textBoxPassword.Text;
-                                    runner.User.FirstName = textBoxFirstName.Text;
-                                    runner.User.LastName = textBoxLastName.Text;
-                                    runner.User.RoleId = "R";
-                                    runner.Gender = comboBoxGender.SelectedItem.ToString();
-                                    runner.DateOfBirth = dateTimePickerBirth.Value;
-                                    runner.CountryCode = comboBoxCountry.SelectedItem.ToString();
-                                    //  Program.marathonSkillsEntities.Runner.Add(runner);
-                                    //  Program.marathonSkillsEntities.SaveChanges();
+                                    SqlConnection conn = new SqlConnection(Connection.GetString());
+                                    conn.Open();
+                                    SqlCommand command = new SqlCommand("INSERT INTO Users VALUES(@e,@p,@l,@f,@r,@pp)", conn);
+                                    command.Parameters.Add("@e", textBoxEmail.Text);
+                                    command.Parameters.Add("@p", textBoxPassword.Text);
+                                    command.Parameters.Add("@l", textBoxFirstName.Text);
+                                    command.Parameters.Add("@f", textBoxLastName.Text);
+                                    command.Parameters.Add("@r", "R");
+                                    command.Parameters.Add("@pp", textBoxPic.Text);
+                                    command.ExecuteNonQuery();
+                                    SqlCommand command2 = new SqlCommand("INSERT INTO Runner(Email, Gender, DateOfBirth, CountryCode) VALUES(@e, @g, @d, @c)", conn);
+                                    command2.Parameters.Add("@e", textBoxEmail.Text);
+                                    command2.Parameters.Add("@g", (comboBoxGender.SelectedItem as ComboBoxItem).value);
+                                    command2.Parameters.Add("@d", dateTimePickerBirth.Value);
+                                    command2.Parameters.Add("@c", (comboBoxCountry.SelectedItem as ComboBoxItem).value);
+                                    command2.ExecuteNonQuery();
+                                    try
+                                    {
+                                        Bitmap bmp = new Bitmap(openFileDialogMar.FileName);
+                                        bmp.Save("picture/" + openFileDialogMar.SafeFileName);
+                                    }
+                                    catch (Exception ex)
+                                    {
+
+                                    }
+                                    FormRegistrationMarathon formRegMar = new FormRegistrationMarathon(textBoxEmail.Text);
+                                    formRegMar.Show();
+                                    this.Hide();
                                 }
                             }
                         }
-
                         else MessageBox.Show("Данные не выбраны", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
+        }
+
+        private void textBoxEmail_Enter(object sender, EventArgs e)
+        {
+            if (textBoxEmail.Text == "Введите email")
+            {
+                textBoxEmail.Clear();
+                textBoxEmail.ForeColor = Color.Black;
             }
-            catch { MessageBox.Show("Данные не выбраны", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+        }
+
+        private void textBoxEmail_Leave(object sender, EventArgs e)
+        {
+            if (textBoxEmail.Text == null)
+            {
+                textBoxEmail.Text = "Введите email";
+                textBoxEmail.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxFirstName_Enter(object sender, EventArgs e)
+        {
+            if (textBoxFirstName.Text == "Введите имя")
+            {
+                textBoxFirstName.Clear();
+                textBoxFirstName.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxFirstName_Leave(object sender, EventArgs e)
+        {
+            if (textBoxFirstName.Text == null)
+            {
+                textBoxFirstName.Text = "Введите имя";
+                textBoxFirstName.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxLastName_Enter(object sender, EventArgs e)
+        {
+            if (textBoxLastName.Text == "Введите фамилию")
+            {
+                textBoxLastName.Clear();
+                textBoxLastName.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxLastName_Leave(object sender, EventArgs e)
+        {
+            if (textBoxLastName.Text == null)
+            {
+                textBoxLastName.Text = "Введите фамилию";
+                textBoxLastName.ForeColor = Color.Gray;
+            }
         }
     }
         

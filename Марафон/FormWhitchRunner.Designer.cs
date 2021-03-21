@@ -39,6 +39,8 @@
             this.buttonNewRunner = new System.Windows.Forms.Button();
             this.buttonRunnerBefore = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
+            this.label = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -48,6 +50,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.MediumPurple;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.label);
             this.panel2.Location = new System.Drawing.Point(-4, 139);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1005, 101);
@@ -93,7 +96,7 @@
             this.panel3.Controls.Add(this.labelTime);
             this.panel3.Location = new System.Drawing.Point(-6, 598);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1005, 101);
+            this.panel3.Size = new System.Drawing.Size(1005, 104);
             this.panel3.TabIndex = 22;
             // 
             // labelTime
@@ -101,7 +104,7 @@
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTime.ForeColor = System.Drawing.Color.GhostWhite;
-            this.labelTime.Location = new System.Drawing.Point(199, 32);
+            this.labelTime.Location = new System.Drawing.Point(197, 25);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(655, 37);
             this.labelTime.TabIndex = 5;
@@ -147,12 +150,23 @@
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
             // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label.Location = new System.Drawing.Point(239, 31);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(480, 37);
+            this.label.TabIndex = 6;
+            this.label.Text = "Выберите подходящий к вам пункт";
+            // 
             // FormWhitchRunner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
-            this.ClientSize = new System.Drawing.Size(996, 700);
+            this.ClientSize = new System.Drawing.Size(996, 685);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -162,6 +176,8 @@
             this.Name = "FormWhitchRunner";
             this.Text = "Проверка уже введенных бегунов";
             this.Load += new System.EventHandler(this.FormWhitchRunner_Load);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -182,5 +198,6 @@
         private System.Windows.Forms.Button buttonNewRunner;
         private System.Windows.Forms.Button buttonRunnerBefore;
         private System.Windows.Forms.Button buttonLogin;
+        private System.Windows.Forms.Label label;
     }
 }

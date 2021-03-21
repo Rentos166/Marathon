@@ -28,8 +28,8 @@ namespace Марафон
 
         private void buttonLogout_Click(object sender, EventArgs e)
         {
-            FormAuthorization formAuthorization = new FormAuthorization();
-            formAuthorization.Show();
+            Menu menu = new Menu();
+            menu.Show();
             this.Hide();
         }
 
@@ -51,6 +51,20 @@ namespace Марафон
         private void FormRunnerMenu_Load(object sender, EventArgs e)
         {
             timerMarathon.Start();
+        }
+
+        private void buttonRegforMar_Click(object sender, EventArgs e)
+        {
+            FormRegistration registration = new FormRegistration();
+            registration.Show();
+            this.Hide();
+        }
+
+        private void buttonRedProfile_Click(object sender, EventArgs e)
+        {
+            FormRunnerEditProfile runnerEditProfile = new FormRunnerEditProfile(email);
+            runnerEditProfile.Show();
+            this.Hide();
         }
     }
 }

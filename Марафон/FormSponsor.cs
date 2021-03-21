@@ -236,7 +236,6 @@ namespace Марафон
 
         private void textBoxName_Enter(object sender, EventArgs e)
         {
-
             if (textBoxName.Text == "Ваше имя")
             {
                 textBoxName.Clear();
@@ -398,6 +397,11 @@ namespace Марафон
                     textBoxFond.Text = reader["CharityName"].ToString();
                 }
             }
+        }
+
+        private void textBoxName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -7,53 +7,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Марафон
 {
-    public partial class FormMoreInfo : Form
+    public partial class FormInfoAboutMarathon : Form
     {
-        public FormMoreInfo()
+        public FormInfoAboutMarathon()
         {
             InitializeComponent();
+        }
+
+        private void FormInfoAboutMarathon_Load(object sender, EventArgs e)
+        {
+            timerMarathon.Start();
         }
 
         private void timerMarathon_Tick(object sender, EventArgs e)
         {
             DateTime marathonTime = new DateTime(2021, 11, 24, 6, 0, 0);
             TimeSpan totalTime = marathonTime - DateTime.Now;
-
             labelTime.Text = totalTime.Days + " дней " + totalTime.Hours + " часов и " + totalTime.Minutes + " минут до старта марафона!";
         }
 
-        private void FormMoreInfo_Load(object sender, EventArgs e)
-        {
-            timerMarathon.Start();
-
-        }
-
-        private void FormMoreInfo_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormInfoAboutMarathon_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.ExitThread();
         }
 
-        private void buttonBlagoFond_Click(object sender, EventArgs e)
-        {
-            FormListBlago formListBlago = new FormListBlago();
-            formListBlago.Show();
-            this.Hide();
-        }
-
-        private void buttonMarathon_Click(object sender, EventArgs e)
-        {
-            FormInfoAboutMarathon formInfo = new FormInfoAboutMarathon();
-            formInfo.Show();
-            this.Hide();
-        }
-
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
-            menu.Show();
+            FormMoreInfo moreInfo = new FormMoreInfo();
+            moreInfo.Show();
+            this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            FormInteractiveMap formMap = new FormInteractiveMap();
+            formMap.Show();
             this.Hide();
         }
     }

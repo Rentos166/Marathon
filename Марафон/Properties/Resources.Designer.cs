@@ -63,9 +63,69 @@ namespace Марафон.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banco_banespa {
+            get {
+                object obj = ResourceManager.GetObject("banco-banespa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ibirapuera_park_lake {
+            get {
+                object obj = ResourceManager.GetObject("ibirapuera-park-lake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_2016_full_colour {
             get {
                 object obj = ResourceManager.GetObject("logo-2016-full-colour", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap map_icon_start {
+            get {
+                object obj = ResourceManager.GetObject("map-icon-start", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap marathon_image {
+            get {
+                object obj = ResourceManager.GetObject("marathon-image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap marathon_skills_2017_marathon_map {
+            get {
+                object obj = ResourceManager.GetObject("marathon-skills-2017-marathon-map", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teatro_municipal {
+            get {
+                object obj = ResourceManager.GetObject("teatro-municipal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

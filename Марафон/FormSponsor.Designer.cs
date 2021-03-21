@@ -265,6 +265,7 @@
             this.textBoxName.Size = new System.Drawing.Size(229, 26);
             this.textBoxName.TabIndex = 55;
             this.textBoxName.Text = "Ваше имя";
+            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             this.textBoxName.Enter += new System.EventHandler(this.textBoxName_Enter);
             this.textBoxName.Leave += new System.EventHandler(this.textBoxName_Leave);
             // 
