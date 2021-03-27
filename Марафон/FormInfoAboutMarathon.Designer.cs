@@ -35,11 +35,11 @@
             this.labelInfo = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
             this.timerMarathon = new System.Windows.Forms.Timer(this.components);
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -47,8 +47,8 @@
             this.pictureBoxMarathon = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -60,16 +60,16 @@
             // 
             this.labelInfoMarathon.AutoSize = true;
             this.labelInfoMarathon.BackColor = System.Drawing.Color.Gold;
-            this.labelInfoMarathon.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelInfoMarathon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelInfoMarathon.Location = new System.Drawing.Point(343, 197);
             this.labelInfoMarathon.Name = "labelInfoMarathon";
-            this.labelInfoMarathon.Size = new System.Drawing.Size(645, 500);
+            this.labelInfoMarathon.Size = new System.Drawing.Size(785, 500);
             this.labelInfoMarathon.TabIndex = 37;
             this.labelInfoMarathon.Text = resources.GetString("labelInfoMarathon.Text");
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel2.BackColor = System.Drawing.Color.MediumPurple;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.labelInfo);
             this.panel2.Location = new System.Drawing.Point(-5, 93);
@@ -80,13 +80,13 @@
             // labelInfo
             // 
             this.labelInfo.AutoSize = true;
-            this.labelInfo.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelInfo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelInfo.Location = new System.Drawing.Point(249, 30);
+            this.labelInfo.Location = new System.Drawing.Point(211, 29);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(480, 37);
+            this.labelInfo.Size = new System.Drawing.Size(567, 37);
             this.labelInfo.TabIndex = 6;
-            this.labelInfo.Text = "Информация о Marathon Skills 2017";
+            this.labelInfo.Text = "Информация о Marathon Skills 2016";
             // 
             // panel4
             // 
@@ -103,7 +103,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.Gold;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonBack.ForeColor = System.Drawing.Color.Black;
             this.buttonBack.Location = new System.Drawing.Point(21, 29);
             this.buttonBack.Name = "buttonBack";
@@ -113,9 +113,19 @@
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(839, 92);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel3.BackColor = System.Drawing.Color.MediumPurple;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.labelTime);
             this.panel3.Location = new System.Drawing.Point(-6, 703);
@@ -126,11 +136,11 @@
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTime.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelTime.Location = new System.Drawing.Point(171, 19);
+            this.labelTime.Location = new System.Drawing.Point(114, 15);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(655, 37);
+            this.labelTime.Size = new System.Drawing.Size(765, 37);
             this.labelTime.TabIndex = 5;
             this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
             // 
@@ -142,25 +152,15 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(53, 353);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(257, 46);
+            this.label4.Size = new System.Drawing.Size(317, 48);
             this.label4.TabIndex = 28;
             this.label4.Text = "(Нажмите, чтобы\r\nоткрыть интерактивную карту)";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(839, 92);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -239,9 +239,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

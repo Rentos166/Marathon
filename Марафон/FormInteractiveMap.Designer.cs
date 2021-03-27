@@ -113,11 +113,11 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Gray;
             this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.Cyan;
             this.label7.Location = new System.Drawing.Point(642, 589);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(24, 29);
+            this.label7.Size = new System.Drawing.Size(27, 29);
             this.label7.TabIndex = 39;
             this.label7.Text = "5";
             // 
@@ -186,11 +186,11 @@
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTime.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelTime.Location = new System.Drawing.Point(187, 19);
+            this.labelTime.Location = new System.Drawing.Point(114, 15);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(655, 37);
+            this.labelTime.Size = new System.Drawing.Size(765, 37);
             this.labelTime.TabIndex = 5;
             this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
             // 
@@ -208,7 +208,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.Gold;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonBack.Location = new System.Drawing.Point(21, 29);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(102, 57);
@@ -220,11 +220,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(206, 18);
+            this.label1.Location = new System.Drawing.Point(166, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(563, 37);
+            this.label1.Size = new System.Drawing.Size(672, 37);
             this.label1.TabIndex = 6;
             this.label1.Text = "Интерактивная карта Marathon Skills 2016";
             // 

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,11 +43,10 @@
             this.buttonOldRes = new System.Windows.Forms.Button();
             this.buttonMarathon = new System.Windows.Forms.Button();
             this.timerMarathon = new System.Windows.Forms.Timer(this.components);
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -64,7 +64,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.Gold;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonBack.Location = new System.Drawing.Point(21, 29);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(102, 57);
@@ -72,6 +72,16 @@
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(129, 4);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(869, 92);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // panel3
             // 
@@ -86,11 +96,11 @@
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTime.ForeColor = System.Drawing.Color.GhostWhite;
-            this.labelTime.Location = new System.Drawing.Point(175, 20);
+            this.labelTime.Location = new System.Drawing.Point(124, 14);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(655, 37);
+            this.labelTime.Size = new System.Drawing.Size(765, 37);
             this.labelTime.TabIndex = 5;
             this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
             // 
@@ -107,11 +117,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label1.Location = new System.Drawing.Point(316, 25);
+            this.label1.Location = new System.Drawing.Point(302, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 37);
+            this.label1.Size = new System.Drawing.Size(377, 37);
             this.label1.TabIndex = 6;
             this.label1.Text = "Подробная информация";
             // 
@@ -119,8 +129,8 @@
             // 
             this.buttonBMR.BackColor = System.Drawing.Color.Gold;
             this.buttonBMR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBMR.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBMR.Location = new System.Drawing.Point(477, 487);
+            this.buttonBMR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBMR.Location = new System.Drawing.Point(509, 490);
             this.buttonBMR.Name = "buttonBMR";
             this.buttonBMR.Size = new System.Drawing.Size(360, 76);
             this.buttonBMR.TabIndex = 24;
@@ -131,8 +141,8 @@
             // 
             this.buttonBlagoFond.BackColor = System.Drawing.Color.Gold;
             this.buttonBlagoFond.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBlagoFond.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBlagoFond.Location = new System.Drawing.Point(477, 363);
+            this.buttonBlagoFond.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBlagoFond.Location = new System.Drawing.Point(509, 366);
             this.buttonBlagoFond.Name = "buttonBlagoFond";
             this.buttonBlagoFond.Size = new System.Drawing.Size(360, 76);
             this.buttonBlagoFond.TabIndex = 23;
@@ -144,8 +154,8 @@
             // 
             this.buttonTimeMar.BackColor = System.Drawing.Color.Gold;
             this.buttonTimeMar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTimeMar.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonTimeMar.Location = new System.Drawing.Point(477, 245);
+            this.buttonTimeMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonTimeMar.Location = new System.Drawing.Point(509, 248);
             this.buttonTimeMar.Name = "buttonTimeMar";
             this.buttonTimeMar.Size = new System.Drawing.Size(360, 76);
             this.buttonTimeMar.TabIndex = 22;
@@ -156,8 +166,8 @@
             // 
             this.buttonBMI.BackColor = System.Drawing.Color.Gold;
             this.buttonBMI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBMI.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBMI.Location = new System.Drawing.Point(92, 487);
+            this.buttonBMI.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBMI.Location = new System.Drawing.Point(124, 490);
             this.buttonBMI.Name = "buttonBMI";
             this.buttonBMI.Size = new System.Drawing.Size(360, 76);
             this.buttonBMI.TabIndex = 21;
@@ -168,8 +178,8 @@
             // 
             this.buttonOldRes.BackColor = System.Drawing.Color.Gold;
             this.buttonOldRes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOldRes.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOldRes.Location = new System.Drawing.Point(92, 363);
+            this.buttonOldRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonOldRes.Location = new System.Drawing.Point(124, 366);
             this.buttonOldRes.Name = "buttonOldRes";
             this.buttonOldRes.Size = new System.Drawing.Size(360, 76);
             this.buttonOldRes.TabIndex = 20;
@@ -180,8 +190,8 @@
             // 
             this.buttonMarathon.BackColor = System.Drawing.Color.Gold;
             this.buttonMarathon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMarathon.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMarathon.Location = new System.Drawing.Point(92, 245);
+            this.buttonMarathon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonMarathon.Location = new System.Drawing.Point(124, 248);
             this.buttonMarathon.Name = "buttonMarathon";
             this.buttonMarathon.Size = new System.Drawing.Size(360, 76);
             this.buttonMarathon.TabIndex = 19;
@@ -192,16 +202,6 @@
             // timerMarathon
             // 
             this.timerMarathon.Tick += new System.EventHandler(this.timerMarathon_Tick);
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(129, 4);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(869, 92);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // FormMoreInfo
             // 
@@ -224,11 +224,11 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMoreInfo_FormClosing);
             this.Load += new System.EventHandler(this.FormMoreInfo_Load);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

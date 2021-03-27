@@ -10,7 +10,7 @@ namespace Марафон
     {
         public static string GetString()
         {
-            return @"Data Source=DESKTOP-1L61UFJ\SQLEXPRESS;Initial Catalog=Marathon1;Integrated Security=True";
+            return @"Data Source=DESKTOP-PKUSCSQ\SQLEXPRESS;Initial Catalog=Marathon;Integrated Security=True";
         }
     }
 }

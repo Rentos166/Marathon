@@ -32,6 +32,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -39,11 +40,10 @@
             this.labelInfo = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
             this.timerMarathon = new System.Windows.Forms.Timer(this.components);
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -62,7 +62,7 @@
             // 
             this.buttonLogout.BackColor = System.Drawing.Color.Gold;
             this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogout.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonLogout.Location = new System.Drawing.Point(886, 29);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.Size = new System.Drawing.Size(102, 57);
@@ -75,7 +75,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.Gold;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonBack.Location = new System.Drawing.Point(21, 29);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(102, 57);
@@ -83,6 +83,16 @@
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(710, 92);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // panel3
             // 
@@ -97,11 +107,11 @@
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTime.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelTime.Location = new System.Drawing.Point(187, 19);
+            this.labelTime.Location = new System.Drawing.Point(123, 14);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(655, 37);
+            this.labelTime.Size = new System.Drawing.Size(765, 37);
             this.labelTime.TabIndex = 5;
             this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
             // 
@@ -119,11 +129,11 @@
             // labelInfo1
             // 
             this.labelInfo1.AutoSize = true;
-            this.labelInfo1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelInfo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelInfo1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelInfo1.Location = new System.Drawing.Point(144, 127);
+            this.labelInfo1.Location = new System.Drawing.Point(83, 126);
             this.labelInfo1.Name = "labelInfo1";
-            this.labelInfo1.Size = new System.Drawing.Size(666, 50);
+            this.labelInfo1.Size = new System.Drawing.Size(828, 50);
             this.labelInfo1.TabIndex = 4;
             this.labelInfo1.Text = "Благодарим Вас за регистрацию в качестве бегуна в Marathon Skills 2016!\r\nС Вами с" +
     "вяжутся по поводу оплаты.\r\n";
@@ -132,11 +142,11 @@
             // labelInfo
             // 
             this.labelInfo.AutoSize = true;
-            this.labelInfo.Font = new System.Drawing.Font("Arial Narrow", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelInfo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelInfo.Location = new System.Drawing.Point(162, 11);
+            this.labelInfo.Location = new System.Drawing.Point(119, 13);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(623, 86);
+            this.labelInfo.Size = new System.Drawing.Size(749, 84);
             this.labelInfo.TabIndex = 3;
             this.labelInfo.Text = "Благодарим за регистрацию в качестве\r\nбегуна!";
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -145,7 +155,7 @@
             // 
             this.buttonOK.BackColor = System.Drawing.Color.Gold;
             this.buttonOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOK.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonOK.Location = new System.Drawing.Point(386, 410);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(200, 90);
@@ -157,16 +167,6 @@
             // timerMarathon
             // 
             this.timerMarathon.Tick += new System.EventHandler(this.timerMarathon_Tick);
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(710, 92);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // FormRegistrationMarathonConfirm
             // 
@@ -186,11 +186,11 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormRegistrationMarathonConfirm_FormClosing);
             this.Load += new System.EventHandler(this.FormRegistrationMarathonConfirm_Load);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

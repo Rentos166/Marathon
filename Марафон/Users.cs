@@ -12,19 +12,23 @@ namespace Марафон
     using System;
     using System.Collections.Generic;
     
-    public partial class RaceKitOption
+    public partial class Users
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public RaceKitOption()
+        public Users()
         {
-            this.Registration = new HashSet<Registration>();
+            this.Runner = new HashSet<Runner>();
         }
     
-        public string RaceKitOptionId { get; set; }
-        public string RaceKitOption1 { get; set; }
-        public decimal Cost { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string RoleId { get; set; }
+        public string Picture { get; set; }
     
+        public virtual Role Role { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Registration> Registration { get; set; }
+        public virtual ICollection<Runner> Runner { get; set; }
     }
 }

@@ -55,20 +55,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Charity.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
     <Compile Include="ComboBoxItem.cs" />
     <Compile Include="Connection.cs" />
-    <Compile Include="Country.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Event.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EventType.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
     <Compile Include="FormAuthorization.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,12 +153,6 @@
     <Compile Include="FormWhitchRunner.Designer.cs">
       <DependentUpon>FormWhitchRunner.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gender.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Marathon.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,59 +165,8 @@
     <Compile Include="FormSponsor.Designer.cs">
       <DependentUpon>FormSponsor.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModelMarathon.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelMarathon.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelMarathon.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelMarathon.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelMarathon.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Position.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RaceKitOption.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Registration.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="RegistrationEvent.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="RegistrationStatus.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Role.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Runner.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sponsorship.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Staff.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Timesheet.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Volunteer.cs">
-      <DependentUpon>ModelMarathon.tt</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
     </EmbeddedResource>
@@ -300,13 +231,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EntityDeploy Include="ModelMarathon.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelMarathon.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ModelMarathon.edmx.diagram">
-      <DependentUpon>ModelMarathon.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -328,16 +252,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModelMarathon.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelMarathon.edmx</DependentUpon>
-      <LastGenOutput>ModelMarathon.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelMarathon.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelMarathon.edmx</DependentUpon>
-      <LastGenOutput>ModelMarathon.cs</LastGenOutput>
-    </Content>
     <None Include="Resources\map-icon-start.png" />
     <None Include="Resources\teatro-municipal.jpg" />
     <None Include="Resources\marathon-image.jpg" />

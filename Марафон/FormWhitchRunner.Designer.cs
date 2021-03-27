@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonBack = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -39,7 +40,6 @@
             this.buttonNewRunner = new System.Windows.Forms.Button();
             this.buttonRunnerBefore = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
-            this.label = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,6 +56,17 @@
             this.panel2.Size = new System.Drawing.Size(1005, 101);
             this.panel2.TabIndex = 24;
             // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label.Location = new System.Drawing.Point(239, 31);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(535, 37);
+            this.label.TabIndex = 6;
+            this.label.Text = "Выберите подходящий к вам пункт";
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
@@ -71,7 +82,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.Gold;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonBack.Location = new System.Drawing.Point(21, 29);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(102, 57);
@@ -102,11 +113,11 @@
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTime.ForeColor = System.Drawing.Color.GhostWhite;
-            this.labelTime.Location = new System.Drawing.Point(197, 25);
+            this.labelTime.Location = new System.Drawing.Point(124, 26);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(655, 37);
+            this.labelTime.Size = new System.Drawing.Size(765, 37);
             this.labelTime.TabIndex = 5;
             this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
             // 
@@ -118,19 +129,20 @@
             // 
             this.buttonNewRunner.BackColor = System.Drawing.Color.Gold;
             this.buttonNewRunner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNewRunner.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonNewRunner.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonNewRunner.Location = new System.Drawing.Point(244, 408);
             this.buttonNewRunner.Name = "buttonNewRunner";
             this.buttonNewRunner.Size = new System.Drawing.Size(451, 76);
             this.buttonNewRunner.TabIndex = 26;
             this.buttonNewRunner.Text = "Я новый участник";
             this.buttonNewRunner.UseVisualStyleBackColor = false;
+            this.buttonNewRunner.Click += new System.EventHandler(this.buttonNewRunner_Click);
             // 
             // buttonRunnerBefore
             // 
             this.buttonRunnerBefore.BackColor = System.Drawing.Color.Gold;
             this.buttonRunnerBefore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRunnerBefore.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonRunnerBefore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonRunnerBefore.Location = new System.Drawing.Point(244, 313);
             this.buttonRunnerBefore.Name = "buttonRunnerBefore";
             this.buttonRunnerBefore.Size = new System.Drawing.Size(451, 76);
@@ -142,24 +154,13 @@
             // 
             this.buttonLogin.BackColor = System.Drawing.Color.Gold;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonLogin.Location = new System.Drawing.Point(851, 512);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(133, 67);
             this.buttonLogin.TabIndex = 21;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
-            // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label.Location = new System.Drawing.Point(239, 31);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(480, 37);
-            this.label.TabIndex = 6;
-            this.label.Text = "Выберите подходящий к вам пункт";
             // 
             // FormWhitchRunner
             // 

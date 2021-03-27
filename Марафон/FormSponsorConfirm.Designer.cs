@@ -63,7 +63,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.Gold;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonBack.Location = new System.Drawing.Point(21, 29);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(102, 57);
@@ -95,11 +95,11 @@
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTime.ForeColor = System.Drawing.Color.White;
-            this.labelTime.Location = new System.Drawing.Point(187, 19);
+            this.labelTime.Location = new System.Drawing.Point(126, 14);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(655, 37);
+            this.labelTime.Size = new System.Drawing.Size(765, 37);
             this.labelTime.TabIndex = 5;
             this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
             // 
@@ -117,11 +117,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(167, 76);
+            this.label2.Location = new System.Drawing.Point(126, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(639, 50);
+            this.label2.Size = new System.Drawing.Size(789, 50);
             this.label2.TabIndex = 4;
             this.label2.Text = "Спасибо за поддержку бегуна в Marathon Skills 2016!\r\nВаше пожертвование поступит " +
     "в его благотворительную организацию.";
@@ -130,11 +130,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(153, 17);
+            this.label1.Location = new System.Drawing.Point(124, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(672, 43);
+            this.label1.Size = new System.Drawing.Size(812, 42);
             this.label1.TabIndex = 3;
             this.label1.Text = "Спасибо за Вашу спонсорскую поддержку!";
             // 
@@ -146,7 +146,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Gold;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(422, 557);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 57);
@@ -158,11 +158,11 @@
             // labelSum
             // 
             this.labelSum.AutoSize = true;
-            this.labelSum.Font = new System.Drawing.Font("Arial Narrow", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSum.ForeColor = System.Drawing.Color.RoyalBlue;
             this.labelSum.Location = new System.Drawing.Point(409, 430);
             this.labelSum.Name = "labelSum";
-            this.labelSum.Size = new System.Drawing.Size(119, 75);
+            this.labelSum.Size = new System.Drawing.Size(143, 73);
             this.labelSum.TabIndex = 41;
             this.labelSum.Text = "$50";
             this.labelSum.Click += new System.EventHandler(this.labelSum_Click);
@@ -171,12 +171,12 @@
             // 
             this.textBoxFond.BackColor = System.Drawing.Color.SeaGreen;
             this.textBoxFond.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxFond.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxFond.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxFond.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textBoxFond.Location = new System.Drawing.Point(169, 355);
             this.textBoxFond.Name = "textBoxFond";
             this.textBoxFond.ReadOnly = true;
-            this.textBoxFond.Size = new System.Drawing.Size(609, 34);
+            this.textBoxFond.Size = new System.Drawing.Size(609, 33);
             this.textBoxFond.TabIndex = 40;
             this.textBoxFond.Text = "Фонд Кошек";
             this.textBoxFond.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -185,12 +185,12 @@
             // 
             this.textBoxRunner.BackColor = System.Drawing.Color.SeaGreen;
             this.textBoxRunner.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxRunner.Font = new System.Drawing.Font("Arial Narrow", 27.75F);
+            this.textBoxRunner.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
             this.textBoxRunner.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textBoxRunner.Location = new System.Drawing.Point(169, 299);
             this.textBoxRunner.Name = "textBoxRunner";
             this.textBoxRunner.ReadOnly = true;
-            this.textBoxRunner.Size = new System.Drawing.Size(609, 43);
+            this.textBoxRunner.Size = new System.Drawing.Size(609, 42);
             this.textBoxRunner.TabIndex = 39;
             this.textBoxRunner.Text = "Иван Прудов(204) из Russia";
             this.textBoxRunner.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

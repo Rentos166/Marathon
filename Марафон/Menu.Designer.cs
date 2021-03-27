@@ -61,22 +61,22 @@
             // labelDate
             // 
             this.labelDate.AutoSize = true;
-            this.labelDate.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelDate.ForeColor = System.Drawing.Color.GhostWhite;
-            this.labelDate.Location = new System.Drawing.Point(457, 47);
+            this.labelDate.Location = new System.Drawing.Point(437, 47);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(179, 31);
+            this.labelDate.Size = new System.Drawing.Size(222, 31);
             this.labelDate.TabIndex = 4;
             this.labelDate.Text = "24 ноября 2016";
             // 
             // labelCity
             // 
             this.labelCity.AutoSize = true;
-            this.labelCity.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCity.ForeColor = System.Drawing.Color.GhostWhite;
-            this.labelCity.Location = new System.Drawing.Point(376, 16);
+            this.labelCity.Location = new System.Drawing.Point(354, 16);
             this.labelCity.Name = "labelCity";
-            this.labelCity.Size = new System.Drawing.Size(321, 31);
+            this.labelCity.Size = new System.Drawing.Size(387, 31);
             this.labelCity.TabIndex = 3;
             this.labelCity.Text = "Кировская область, Россия";
             // 
@@ -87,17 +87,17 @@
             this.panelTime.Controls.Add(this.labelTime);
             this.panelTime.Location = new System.Drawing.Point(-104, 504);
             this.panelTime.Name = "panelTime";
-            this.panelTime.Size = new System.Drawing.Size(1005, 73);
+            this.panelTime.Size = new System.Drawing.Size(1005, 89);
             this.panelTime.TabIndex = 9;
             // 
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTime.ForeColor = System.Drawing.Color.GhostWhite;
-            this.labelTime.Location = new System.Drawing.Point(236, 13);
+            this.labelTime.Location = new System.Drawing.Point(168, 27);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(655, 37);
+            this.labelTime.Size = new System.Drawing.Size(765, 37);
             this.labelTime.TabIndex = 5;
             this.labelTime.Text = "8 дней 15 часов и 18 минут до старта марафона!";
             // 
@@ -109,7 +109,7 @@
             // 
             this.buttonAuthorization.BackColor = System.Drawing.Color.Yellow;
             this.buttonAuthorization.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAuthorization.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAuthorization.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAuthorization.Location = new System.Drawing.Point(742, 420);
             this.buttonAuthorization.Name = "buttonAuthorization";
             this.buttonAuthorization.Size = new System.Drawing.Size(133, 67);
@@ -122,7 +122,7 @@
             // 
             this.buttonMore.BackColor = System.Drawing.Color.Yellow;
             this.buttonMore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMore.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonMore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonMore.Location = new System.Drawing.Point(216, 411);
             this.buttonMore.Name = "buttonMore";
             this.buttonMore.Size = new System.Drawing.Size(451, 76);
@@ -135,7 +135,7 @@
             // 
             this.buttonSponsor.BackColor = System.Drawing.Color.Yellow;
             this.buttonSponsor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSponsor.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSponsor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSponsor.Location = new System.Drawing.Point(216, 329);
             this.buttonSponsor.Name = "buttonSponsor";
             this.buttonSponsor.Size = new System.Drawing.Size(451, 76);
@@ -148,7 +148,7 @@
             // 
             this.buttonRunner.BackColor = System.Drawing.Color.Yellow;
             this.buttonRunner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRunner.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonRunner.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonRunner.Location = new System.Drawing.Point(216, 247);
             this.buttonRunner.Name = "buttonRunner";
             this.buttonRunner.Size = new System.Drawing.Size(451, 76);

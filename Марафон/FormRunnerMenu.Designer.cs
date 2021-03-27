@@ -62,11 +62,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.GhostWhite;
             this.label1.Location = new System.Drawing.Point(393, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 37);
+            this.label1.Size = new System.Drawing.Size(203, 37);
             this.label1.TabIndex = 6;
             this.label1.Text = "Меню бегуна";
             // 
@@ -86,7 +86,7 @@
             // 
             this.buttonLogout.BackColor = System.Drawing.Color.Gold;
             this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogout.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonLogout.Location = new System.Drawing.Point(885, 29);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.Size = new System.Drawing.Size(102, 57);
@@ -99,7 +99,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.Gold;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonBack.Location = new System.Drawing.Point(21, 29);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(102, 57);
@@ -131,11 +131,11 @@
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTime.ForeColor = System.Drawing.Color.GhostWhite;
-            this.labelTime.Location = new System.Drawing.Point(187, 19);
+            this.labelTime.Location = new System.Drawing.Point(124, 18);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(655, 37);
+            this.labelTime.Size = new System.Drawing.Size(765, 37);
             this.labelTime.TabIndex = 5;
             this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
             // 
@@ -147,7 +147,7 @@
             // 
             this.buttonMySpon.BackColor = System.Drawing.Color.Gold;
             this.buttonMySpon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMySpon.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonMySpon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonMySpon.Location = new System.Drawing.Point(511, 330);
             this.buttonMySpon.Name = "buttonMySpon";
             this.buttonMySpon.Size = new System.Drawing.Size(296, 71);
@@ -159,7 +159,7 @@
             // 
             this.buttonMyResult.BackColor = System.Drawing.Color.Gold;
             this.buttonMyResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMyResult.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonMyResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonMyResult.Location = new System.Drawing.Point(511, 223);
             this.buttonMyResult.Name = "buttonMyResult";
             this.buttonMyResult.Size = new System.Drawing.Size(296, 71);
@@ -171,7 +171,7 @@
             // 
             this.buttonContacts.BackColor = System.Drawing.Color.Gold;
             this.buttonContacts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonContacts.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonContacts.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonContacts.Location = new System.Drawing.Point(147, 438);
             this.buttonContacts.Name = "buttonContacts";
             this.buttonContacts.Size = new System.Drawing.Size(296, 71);
@@ -184,7 +184,7 @@
             // 
             this.buttonRedProfile.BackColor = System.Drawing.Color.Gold;
             this.buttonRedProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRedProfile.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonRedProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonRedProfile.Location = new System.Drawing.Point(147, 330);
             this.buttonRedProfile.Name = "buttonRedProfile";
             this.buttonRedProfile.Size = new System.Drawing.Size(296, 71);
@@ -197,7 +197,7 @@
             // 
             this.buttonRegforMar.BackColor = System.Drawing.Color.Gold;
             this.buttonRegforMar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRegforMar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonRegforMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonRegforMar.Location = new System.Drawing.Point(147, 223);
             this.buttonRegforMar.Name = "buttonRegforMar";
             this.buttonRegforMar.Size = new System.Drawing.Size(296, 71);

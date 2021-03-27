@@ -29,5 +29,10 @@ namespace Марафон
         {
             timerMarathon.Start();
         }
+
+        private void buttonNewRunner_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
