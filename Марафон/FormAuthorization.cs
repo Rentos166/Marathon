@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 
 namespace Марафон
 {
+
     public struct Users
     {
         public string email;
@@ -21,7 +22,7 @@ namespace Марафон
     }
     public partial class FormAuthorization : Form
     {
-
+        public static string email;
         public static Users users = new Users();
         public FormAuthorization()
         {
@@ -66,8 +67,9 @@ namespace Марафон
                     }
                     else
                     {
+                        email = textBoxEmail.Text;
                         while (reader.Read())
-                        {
+                        {                           
                             if (reader["RoleId"].ToString() == "R")
                             {
                                 //MessageBox.Show("Runner");

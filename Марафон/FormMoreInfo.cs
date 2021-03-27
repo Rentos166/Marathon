@@ -56,5 +56,12 @@ namespace Марафон
             menu.Show();
             this.Hide();
         }
+
+        private void buttonTimeMar_Click(object sender, EventArgs e)
+        {
+            FormHowLongMarathon howLongMarathon = new FormHowLongMarathon();
+            howLongMarathon.Show();
+            this.Hide();
+        }
     }
 }

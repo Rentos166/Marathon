@@ -66,5 +66,12 @@ namespace Марафон
             runnerEditProfile.Show();
             this.Hide();
         }
+
+        private void buttonMyResult_Click(object sender, EventArgs e)
+        {
+            FormRunnerMyResults myResults = new FormRunnerMyResults();
+            myResults.Show();
+            this.Hide();
+        }
     }
 }
