@@ -57,6 +57,30 @@
   <ItemGroup>
     <Compile Include="ComboBoxItem.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="FormAddEditCharity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddEditCharity.Designer.cs">
+      <DependentUpon>FormAddEditCharity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddUser.Designer.cs">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminCharityList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminCharityList.Designer.cs">
+      <DependentUpon>FormAdminCharityList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminUsersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminUsersList.Designer.cs">
+      <DependentUpon>FormAdminUsersList.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAuthorization.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +164,12 @@
     </Compile>
     <Compile Include="FormCoordinator.Designer.cs">
       <DependentUpon>FormCoordinator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditUser.Designer.cs">
+      <DependentUpon>FormEditUser.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHowLongMarathon.cs">
       <SubType>Form</SubType>
@@ -245,6 +275,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddEditCharity.resx">
+      <DependentUpon>FormAddEditCharity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddUser.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminCharityList.resx">
+      <DependentUpon>FormAdminCharityList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminUsersList.resx">
+      <DependentUpon>FormAdminUsersList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCoordinator.resx">
       <DependentUpon>FormCoordinator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditUser.resx">
+      <DependentUpon>FormEditUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHowLongMarathon.resx">
       <DependentUpon>FormHowLongMarathon.cs</DependentUpon>

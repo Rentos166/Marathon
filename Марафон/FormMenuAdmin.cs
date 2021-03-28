@@ -31,5 +31,31 @@ namespace Марафон
         {
             timerMarathon.Start();
         }
+
+        private void buttonUsers_Click(object sender, EventArgs e)
+        {
+            FormAdminUsersList usersList = new FormAdminUsersList(email);
+            usersList.Show();
+            this.Hide();
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void buttonBlagoOrganiz_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
