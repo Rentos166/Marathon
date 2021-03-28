@@ -81,6 +81,7 @@
             this.label10.Size = new System.Drawing.Size(27, 30);
             this.label10.TabIndex = 42;
             this.label10.Text = "8";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -94,6 +95,7 @@
             this.label9.Size = new System.Drawing.Size(27, 30);
             this.label9.TabIndex = 41;
             this.label9.Text = "7";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -107,6 +109,7 @@
             this.label8.Size = new System.Drawing.Size(25, 28);
             this.label8.TabIndex = 40;
             this.label8.Text = "6";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -120,6 +123,7 @@
             this.label7.Size = new System.Drawing.Size(27, 29);
             this.label7.TabIndex = 39;
             this.label7.Text = "5";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -133,6 +137,7 @@
             this.label6.Size = new System.Drawing.Size(14, 15);
             this.label6.TabIndex = 38;
             this.label6.Text = "3";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -146,6 +151,7 @@
             this.label5.Size = new System.Drawing.Size(14, 15);
             this.label5.TabIndex = 37;
             this.label5.Text = "4";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -159,6 +165,7 @@
             this.label4.Size = new System.Drawing.Size(14, 15);
             this.label4.TabIndex = 36;
             this.label4.Text = "2";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
@@ -172,6 +179,7 @@
             this.label2.Size = new System.Drawing.Size(14, 15);
             this.label2.TabIndex = 35;
             this.label2.Text = "1";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBoxMap
             // 
@@ -238,6 +246,7 @@
             this.pictureBoxStart3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxStart3.TabIndex = 34;
             this.pictureBoxStart3.TabStop = false;
+            this.pictureBoxStart3.Click += new System.EventHandler(this.pictureBoxStart3_Click);
             // 
             // pictureBoxStart2
             // 
@@ -249,6 +258,7 @@
             this.pictureBoxStart2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxStart2.TabIndex = 33;
             this.pictureBoxStart2.TabStop = false;
+            this.pictureBoxStart2.Click += new System.EventHandler(this.pictureBoxStart2_Click);
             // 
             // pictureBoxStart1
             // 
@@ -260,6 +270,7 @@
             this.pictureBoxStart1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxStart1.TabIndex = 32;
             this.pictureBoxStart1.TabStop = false;
+            this.pictureBoxStart1.Click += new System.EventHandler(this.pictureBoxStart1_Click);
             // 
             // panel2
             // 

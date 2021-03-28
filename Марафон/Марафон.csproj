@@ -63,6 +63,72 @@
     <Compile Include="FormAuthorization.Designer.cs">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCheckPoint1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint1.Designer.cs">
+      <DependentUpon>FormCheckPoint1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint2.Designer.cs">
+      <DependentUpon>FormCheckPoint2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint3.Designer.cs">
+      <DependentUpon>FormCheckPoint3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint4.Designer.cs">
+      <DependentUpon>FormCheckPoint4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint5.Designer.cs">
+      <DependentUpon>FormCheckPoint5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint6.Designer.cs">
+      <DependentUpon>FormCheckPoint6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint7.Designer.cs">
+      <DependentUpon>FormCheckPoint7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint8.Designer.cs">
+      <DependentUpon>FormCheckPoint8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPointStart1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPointStart1.Designer.cs">
+      <DependentUpon>FormCheckPointStart1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPointStart2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPointStart2.Designer.cs">
+      <DependentUpon>FormCheckPointStart2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPointStart3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPointStart3.Designer.cs">
+      <DependentUpon>FormCheckPointStart3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormContacts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +248,39 @@
     <EmbeddedResource Include="FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint1.resx">
+      <DependentUpon>FormCheckPoint1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint2.resx">
+      <DependentUpon>FormCheckPoint2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint3.resx">
+      <DependentUpon>FormCheckPoint3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint4.resx">
+      <DependentUpon>FormCheckPoint4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint5.resx">
+      <DependentUpon>FormCheckPoint5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint6.resx">
+      <DependentUpon>FormCheckPoint6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint7.resx">
+      <DependentUpon>FormCheckPoint7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint8.resx">
+      <DependentUpon>FormCheckPoint8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPointStart1.resx">
+      <DependentUpon>FormCheckPointStart1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPointStart2.resx">
+      <DependentUpon>FormCheckPointStart2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPointStart3.resx">
+      <DependentUpon>FormCheckPointStart3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormContacts.resx">
       <DependentUpon>FormContacts.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +375,54 @@
     <None Include="Resources\ibirapuera-park-lake.jpg" />
     <None Include="Resources\banco-banespa.jpg" />
     <None Include="Resources\marathon-skills-2017-marathon-map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-energy-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmi-healthy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmi-obese-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmi-overweight-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmi-underweight-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-2016-monochrome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-drinks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-medical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-toilets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marathon-skills-2016-certificate-seal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marathon-skills-2016-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
