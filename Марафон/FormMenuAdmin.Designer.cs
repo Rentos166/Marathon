@@ -55,9 +55,9 @@
             this.panel4.Controls.Add(this.buttonLogout);
             this.panel4.Controls.Add(this.buttonBack);
             this.panel4.Controls.Add(this.pictureBoxLogo);
-            this.panel4.Location = new System.Drawing.Point(-1, -22);
+            this.panel4.Location = new System.Drawing.Point(-3, -22);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1005, 142);
+            this.panel4.Size = new System.Drawing.Size(1007, 142);
             this.panel4.TabIndex = 28;
             // 
             // buttonLogout
@@ -143,6 +143,7 @@
             this.buttonInventory.TabIndex = 33;
             this.buttonInventory.Text = "Инвентарь";
             this.buttonInventory.UseVisualStyleBackColor = false;
+            this.buttonInventory.Click += new System.EventHandler(this.buttonInventory_Click);
             // 
             // buttonVolonters
             // 
@@ -155,6 +156,7 @@
             this.buttonVolonters.TabIndex = 32;
             this.buttonVolonters.Text = "Волонтеры";
             this.buttonVolonters.UseVisualStyleBackColor = false;
+            this.buttonVolonters.Click += new System.EventHandler(this.buttonVolonters_Click);
             // 
             // buttonBlagoOrganiz
             // 
@@ -205,6 +207,8 @@
             this.Controls.Add(this.buttonVolonters);
             this.Controls.Add(this.buttonBlagoOrganiz);
             this.Controls.Add(this.buttonUsers);
+            this.MaximumSize = new System.Drawing.Size(1017, 632);
+            this.MinimumSize = new System.Drawing.Size(1017, 632);
             this.Name = "FormMenuAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Меню администратора";

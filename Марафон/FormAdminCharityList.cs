@@ -100,5 +100,24 @@ namespace Марафон
             menu.Show();
             this.Hide();
         }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            FormAddEditCharity charity = new FormAddEditCharity(email);
+            charity.Show();
+            this.Hide();
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            FormAddEditCharity charity = new FormAddEditCharity(email);
+            charity.Show();
+            this.Hide();
+        }
+
+        private void FormAdminCharityList_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

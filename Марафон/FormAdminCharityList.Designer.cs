@@ -51,8 +51,8 @@ namespace Марафон
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBoxCharity = new System.Windows.Forms.PictureBox();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -62,8 +62,8 @@ namespace Марафон
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCharity)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,6 +78,7 @@ namespace Марафон
             this.buttonAdd.TabIndex = 25;
             this.buttonAdd.Text = "+ добавить нового";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // panel9
             // 
@@ -199,6 +200,7 @@ namespace Марафон
             this.buttonEdit.Text = "Edit";
             this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Visible = false;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // panelEd
             // 
@@ -295,6 +297,16 @@ namespace Марафон
             this.panel4.Size = new System.Drawing.Size(1005, 102);
             this.panel4.TabIndex = 27;
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(706, 92);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
@@ -307,16 +319,6 @@ namespace Марафон
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1003, 295);
             this.panel1.TabIndex = 29;
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(706, 92);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // pictureBoxCharity
             // 
@@ -349,6 +351,7 @@ namespace Марафон
             this.Name = "FormAdminCharityList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Список благотворительных организаций";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAdminCharityList_FormClosing);
             this.Load += new System.EventHandler(this.FormAdminCharityList_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
@@ -364,8 +367,8 @@ namespace Марафон
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCharity)).EndInit();
             this.ResumeLayout(false);
 

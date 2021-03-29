@@ -189,6 +189,24 @@
     <Compile Include="FormInteractiveMap.Designer.cs">
       <DependentUpon>FormInteractiveMap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventory.Designer.cs">
+      <DependentUpon>FormInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInventoryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventoryAdd.Designer.cs">
+      <DependentUpon>FormInventoryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInventoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventoryReport.Designer.cs">
+      <DependentUpon>FormInventoryReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormListBlago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +272,18 @@
     </Compile>
     <Compile Include="FormSponsorMoreInfoFond.Designer.cs">
       <DependentUpon>FormSponsorMoreInfoFond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVolunteersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVolunteersList.Designer.cs">
+      <DependentUpon>FormVolunteersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVolunteersLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVolunteersLoad.Designer.cs">
+      <DependentUpon>FormVolunteersLoad.cs</DependentUpon>
     </Compile>
     <Compile Include="FormWhitchRunner.cs">
       <SubType>Form</SubType>
@@ -341,6 +371,15 @@
     <EmbeddedResource Include="FormInteractiveMap.resx">
       <DependentUpon>FormInteractiveMap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInventory.resx">
+      <DependentUpon>FormInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInventoryAdd.resx">
+      <DependentUpon>FormInventoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInventoryReport.resx">
+      <DependentUpon>FormInventoryReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormListBlago.resx">
       <DependentUpon>FormListBlago.cs</DependentUpon>
     </EmbeddedResource>
@@ -373,6 +412,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSponsorMoreInfoFond.resx">
       <DependentUpon>FormSponsorMoreInfoFond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVolunteersList.resx">
+      <DependentUpon>FormVolunteersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVolunteersLoad.resx">
+      <DependentUpon>FormVolunteersLoad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormWhitchRunner.resx">
       <DependentUpon>FormWhitchRunner.cs</DependentUpon>

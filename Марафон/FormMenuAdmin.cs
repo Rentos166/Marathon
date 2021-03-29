@@ -55,7 +55,23 @@ namespace Марафон
 
         private void buttonBlagoOrganiz_Click(object sender, EventArgs e)
         {
+            FormAdminCharityList charityList = new FormAdminCharityList();
+            charityList.Show();
+            this.Hide();
+        }
 
+        private void buttonVolonters_Click(object sender, EventArgs e)
+        {
+            FormVolunteersList formVolunteersList = new FormVolunteersList(email);
+            formVolunteersList.Show();
+            this.Hide();
+        }
+
+        private void buttonInventory_Click(object sender, EventArgs e)
+        {
+            FormInventory inventory = new FormInventory(email);
+            inventory.Show();
+            this.Hide();
         }
     }
 }

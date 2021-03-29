@@ -139,5 +139,10 @@ namespace Марафон
                 }
             }
         }
+
+        private void FormAddEditCharity_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
