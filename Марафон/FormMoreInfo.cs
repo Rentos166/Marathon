@@ -63,5 +63,26 @@ namespace Марафон
             howLongMarathon.Show();
             this.Hide();
         }
+
+        private void buttonBMI_Click(object sender, EventArgs e)
+        {
+            FormBMICalculator bMICalculator = new FormBMICalculator();
+            bMICalculator.Show();
+            this.Hide();
+        }
+
+        private void buttonBMR_Click(object sender, EventArgs e)
+        {
+            FormBMRCalculator bMRCalculator = new FormBMRCalculator();
+            bMRCalculator.Show();
+            this.Hide();
+        }
+
+        private void buttonOldRes_Click(object sender, EventArgs e)
+        {
+            FormPreviousResult previousResult = new FormPreviousResult();
+            previousResult.Show();
+            this.Hide();
+        }
     }
 }

@@ -83,12 +83,13 @@
             this.buttonBack.BackColor = System.Drawing.Color.Gold;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBack.Location = new System.Drawing.Point(21, 29);
+            this.buttonBack.Location = new System.Drawing.Point(21, 42);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(102, 57);
             this.buttonBack.TabIndex = 7;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // pictureBox1
             // 
@@ -149,6 +150,7 @@
             this.buttonRunnerBefore.TabIndex = 25;
             this.buttonRunnerBefore.Text = "Я участвовал ранее";
             this.buttonRunnerBefore.UseVisualStyleBackColor = false;
+            this.buttonRunnerBefore.Click += new System.EventHandler(this.buttonRunnerBefore_Click);
             // 
             // buttonLogin
             // 
@@ -161,6 +163,7 @@
             this.buttonLogin.TabIndex = 21;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // FormWhitchRunner
             // 

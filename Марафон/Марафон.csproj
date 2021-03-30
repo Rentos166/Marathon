@@ -87,6 +87,24 @@
     <Compile Include="FormAuthorization.Designer.cs">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBMICalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBMICalculator.Designer.cs">
+      <DependentUpon>FormBMICalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBMRCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBMRCalculator.Designer.cs">
+      <DependentUpon>FormBMRCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBMRCalculatorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBMRCalculatorInfo.Designer.cs">
+      <DependentUpon>FormBMRCalculatorInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCheckPoint1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +243,12 @@
     <Compile Include="FormMoreInfo.Designer.cs">
       <DependentUpon>FormMoreInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPreviousResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPreviousResult.Designer.cs">
+      <DependentUpon>FormPreviousResult.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +284,12 @@
     </Compile>
     <Compile Include="FormRunnerMyResults.Designer.cs">
       <DependentUpon>FormRunnerMyResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRunnerResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRunnerResult.Designer.cs">
+      <DependentUpon>FormRunnerResult.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSponsorConfirm.cs">
       <SubType>Form</SubType>
@@ -305,6 +335,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="FormAddEditCharity.resx">
       <DependentUpon>FormAddEditCharity.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +350,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBMICalculator.resx">
+      <DependentUpon>FormBMICalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBMRCalculator.resx">
+      <DependentUpon>FormBMRCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBMRCalculatorInfo.resx">
+      <DependentUpon>FormBMRCalculatorInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCheckPoint1.resx">
       <DependentUpon>FormCheckPoint1.cs</DependentUpon>
@@ -389,6 +429,9 @@
     <EmbeddedResource Include="FormMoreInfo.resx">
       <DependentUpon>FormMoreInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPreviousResult.resx">
+      <DependentUpon>FormPreviousResult.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </EmbeddedResource>
@@ -406,6 +449,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRunnerMyResults.resx">
       <DependentUpon>FormRunnerMyResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRunnerResult.resx">
+      <DependentUpon>FormRunnerResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSponsorConfirm.resx">
       <DependentUpon>FormSponsorConfirm.cs</DependentUpon>

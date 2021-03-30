@@ -126,6 +126,7 @@
             this.buttonBMR.TabIndex = 24;
             this.buttonBMR.Text = "BMR калькулятор";
             this.buttonBMR.UseVisualStyleBackColor = false;
+            this.buttonBMR.Click += new System.EventHandler(this.buttonBMR_Click);
             // 
             // buttonBlagoFond
             // 
@@ -164,6 +165,7 @@
             this.buttonBMI.TabIndex = 21;
             this.buttonBMI.Text = "BMI калькулятор";
             this.buttonBMI.UseVisualStyleBackColor = false;
+            this.buttonBMI.Click += new System.EventHandler(this.buttonBMI_Click);
             // 
             // buttonOldRes
             // 
@@ -176,6 +178,7 @@
             this.buttonOldRes.TabIndex = 20;
             this.buttonOldRes.Text = "Предыдущие результаты";
             this.buttonOldRes.UseVisualStyleBackColor = false;
+            this.buttonOldRes.Click += new System.EventHandler(this.buttonOldRes_Click);
             // 
             // buttonMarathon
             // 

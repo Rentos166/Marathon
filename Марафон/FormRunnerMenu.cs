@@ -69,8 +69,10 @@ namespace Марафон
 
         private void buttonMyResult_Click(object sender, EventArgs e)
         {
-            FormRunnerMyResults myResults = new FormRunnerMyResults();
-            myResults.Show();
+            //FormRunnerMyResults myResults = new FormRunnerMyResults();
+            //myResults.Show();
+            FormRunnerResult runnerResult = new FormRunnerResult();
+            runnerResult.Show();
             this.Hide();
         }
     }

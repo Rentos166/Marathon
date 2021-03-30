@@ -21,7 +21,6 @@ namespace Марафон
         {
             DateTime marathonTime = new DateTime(2021, 11, 24, 6, 0, 0);
             TimeSpan totalTime = marathonTime - DateTime.Now;
-
             labelTime.Text = totalTime.Days + " дней " + totalTime.Hours + " часов и " + totalTime.Minutes + " минут до старта марафона!";
         }
 
@@ -32,7 +31,30 @@ namespace Марафон
 
         private void buttonNewRunner_Click(object sender, EventArgs e)
         {
+            FormRegistration formRegistration = new FormRegistration();
+            formRegistration.Show();
+            this.Hide();
+        }
 
+        private void buttonRunnerBefore_Click(object sender, EventArgs e)
+        {
+            FormAuthorization authorization = new FormAuthorization();
+            authorization.Show();
+            this.Hide();
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            FormAuthorization authorization = new FormAuthorization();
+            authorization.Show();
+            this.Hide();
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
         }
     }
 }
