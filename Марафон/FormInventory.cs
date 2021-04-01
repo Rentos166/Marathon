@@ -39,15 +39,19 @@ namespace Марафон
                 DataSet dataSet = new DataSet();
                 dataAdapter.Fill(dataSet);
                 table = dataSet.Tables[0];
+
                 totalNumberLabel.Text = table.Rows[0][0].ToString();
+
                 typeANumberLabel.Text = table.Rows[0][1].ToString();
                 idTypeALabel.Text = table.Rows[0][1].ToString();
                 rfidTypeALabel.Text = table.Rows[0][1].ToString();
+
                 typeBNumberLabel.Text = table.Rows[0][2].ToString();
                 idTypeBLabel.Text = table.Rows[0][2].ToString();
                 rfidTypeBLabel.Text = table.Rows[0][2].ToString();
                 basebalTypeBLabel.Text = table.Rows[0][2].ToString();
                 waterTypeBLabel.Text = table.Rows[0][2].ToString();
+
                 typeCNumberLabel.Text = table.Rows[0][3].ToString();
                 idTypeCLabel.Text = table.Rows[0][3].ToString();
                 rfidTypeCLabel.Text = table.Rows[0][3].ToString();
@@ -55,12 +59,14 @@ namespace Марафон
                 waterTypeCLabel.Text = table.Rows[0][3].ToString();
                 tshirtTypeCLabel.Text = table.Rows[0][3].ToString();
                 souvenirTypeCLabel.Text = table.Rows[0][3].ToString();
+
                 idNeedLabel.Text = ((int)table.Rows[0][0]).ToString();
                 rfidNeedLabel.Text = ((int)table.Rows[0][0]).ToString();
                 basebalNeedLabel.Text = ((int)table.Rows[0][2] + (int)table.Rows[0][3]).ToString();
                 waterNeedLabel.Text = ((int)table.Rows[0][2] + (int)table.Rows[0][3]).ToString();
                 tshirtNeedLabel.Text = ((int)table.Rows[0][3]).ToString();
                 souvenirNeedLabel.Text = ((int)table.Rows[0][3]).ToString();
+
                 needNumberLabel.Text = ((int)table.Rows[0][0] + (int)table.Rows[0][0] + (int)table.Rows[0][2] + (int)table.Rows[0][3] + (int)table.Rows[0][2] + (int)table.Rows[0][3] + (int)table.Rows[0][3] + (int)table.Rows[0][3]).ToString();
             }
             catch (Exception exception)
@@ -81,12 +87,14 @@ namespace Марафон
                 DataSet dataSet = new DataSet();
                 dataAdapter.Fill(dataSet);
                 table = dataSet.Tables[0];
+
                 idLeftLabel.Text = ((int)table.Rows[0][0] - Convert.ToInt32(idNeedLabel.Text)).ToString();
                 rfidLeftLabel.Text = ((int)table.Rows[1][0] - Convert.ToInt32(rfidNeedLabel.Text)).ToString();
                 baseballLeftLabel.Text = ((int)table.Rows[2][0] - Convert.ToInt32(basebalNeedLabel.Text)).ToString();
                 waterLeftLabel.Text = ((int)table.Rows[3][0] - Convert.ToInt32(waterNeedLabel.Text)).ToString();
                 tshirtLeftLabel.Text = ((int)table.Rows[4][0] - Convert.ToInt32(tshirtNeedLabel.Text)).ToString();
                 souvenirLeftLabel.Text = ((int)table.Rows[5][0] - Convert.ToInt32(souvenirNeedLabel.Text)).ToString();
+
                 leftNumberLabel.Text = ((int)table.Rows[0][0] + (int)table.Rows[1][0] + (int)table.Rows[2][0] + (int)table.Rows[3][0] + (int)table.Rows[4][0] + (int)table.Rows[5][0] - Convert.ToInt32(needNumberLabel.Text)).ToString();
             }
             catch (Exception exception)

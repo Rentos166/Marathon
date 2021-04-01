@@ -30,5 +30,17 @@ namespace Марафон
             TimeSpan totalTime = marathonTime - DateTime.Now;
             labelTime.Text = totalTime.Days + " дней " + totalTime.Hours + " часов и " + totalTime.Minutes + " минут до старта марафона!";
         }
+
+        private void buttonRunners_Click(object sender, EventArgs e)
+        {
+            FormCoordinatorRunner coordinatorRunner = new FormCoordinatorRunner();
+            coordinatorRunner.Show();
+            this.Hide();
+        }
+
+        private void buttonSpons_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

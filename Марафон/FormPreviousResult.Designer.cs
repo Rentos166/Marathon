@@ -147,7 +147,7 @@ namespace Марафон
             // 
             this.timeNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.timeNumberLabel.ForeColor = System.Drawing.Color.Navy;
-            this.timeNumberLabel.Location = new System.Drawing.Point(896, 316);
+            this.timeNumberLabel.Location = new System.Drawing.Point(879, 318);
             this.timeNumberLabel.Name = "timeNumberLabel";
             this.timeNumberLabel.Size = new System.Drawing.Size(82, 22);
             this.timeNumberLabel.TabIndex = 72;
@@ -167,7 +167,7 @@ namespace Марафон
             // 
             this.runnerNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.runnerNumberLabel.ForeColor = System.Drawing.Color.Navy;
-            this.runnerNumberLabel.Location = new System.Drawing.Point(163, 316);
+            this.runnerNumberLabel.Location = new System.Drawing.Point(162, 318);
             this.runnerNumberLabel.Name = "runnerNumberLabel";
             this.runnerNumberLabel.Size = new System.Drawing.Size(72, 22);
             this.runnerNumberLabel.TabIndex = 70;
@@ -218,7 +218,7 @@ namespace Марафон
             this.finishLabel.AutoSize = true;
             this.finishLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.finishLabel.ForeColor = System.Drawing.Color.Navy;
-            this.finishLabel.Location = new System.Drawing.Point(308, 316);
+            this.finishLabel.Location = new System.Drawing.Point(293, 316);
             this.finishLabel.Name = "finishLabel";
             this.finishLabel.Size = new System.Drawing.Size(287, 24);
             this.finishLabel.TabIndex = 67;

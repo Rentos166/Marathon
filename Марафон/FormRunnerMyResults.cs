@@ -33,8 +33,8 @@ namespace Марафон
                 connectionSql.Open();
 
                 string query = "SELECT [RegistrationId], [MarathonName] as 'Марафон', [EventTypeName] as 'Дистанция', CONVERT(nvarchar, CONVERT(datetime, [RaceTime]/100000.0), 8)  AS 'Время', " +
-                    "(select[MarathonId] from[Marathon]([MarathonName], [EventTypeName]) where[RegId] = [RegistrationId]) as 'Общее место'," +
-                    $"(select[YearHeid] from[Marathon]([MarathonName], [EventTypeName], {minAge}, {maxAge}) where[RegId] = [RegistrationId]) as 'Место по категории'" +
+                    "(select[PlaceId] from[Place]([MarathonName], [EventTypeName]) where[RegId] = [RegistrationId]) as 'Общее место'," +
+                    $"(select[PlaceId] from[PlaceYear]([MarathonName], [EventTypeName], {minAge}, {maxAge}) where[RegId] = [RegistrationId]) as 'Место по категории'" +
                     "FROM[RegistrationEvent] " +
                     "inner join[Event] on[RegistrationEvent].[EventId] = [Event].[EventId] " +
                     "inner join[Marathon] on Event.[MarathonId] = [Marathon].[MarathonId] " +

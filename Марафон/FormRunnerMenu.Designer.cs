@@ -34,6 +34,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
             this.timerMarathon = new System.Windows.Forms.Timer(this.components);
@@ -42,11 +43,10 @@
             this.buttonContacts = new System.Windows.Forms.Button();
             this.buttonRedProfile = new System.Windows.Forms.Button();
             this.buttonRegforMar = new System.Windows.Forms.Button();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -108,6 +108,16 @@
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(129, 4);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(750, 92);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MediumPurple;
@@ -142,8 +152,9 @@
             this.buttonMySpon.Name = "buttonMySpon";
             this.buttonMySpon.Size = new System.Drawing.Size(296, 71);
             this.buttonMySpon.TabIndex = 30;
-            this.buttonMySpon.Text = "Мой спонсор";
+            this.buttonMySpon.Text = "ss";
             this.buttonMySpon.UseVisualStyleBackColor = false;
+            this.buttonMySpon.Click += new System.EventHandler(this.buttonMySpon_Click);
             // 
             // buttonMyResult
             // 
@@ -197,16 +208,6 @@
             this.buttonRegforMar.UseVisualStyleBackColor = false;
             this.buttonRegforMar.Click += new System.EventHandler(this.buttonRegforMar_Click);
             // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(129, 4);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(750, 92);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
-            // 
             // FormRunnerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,9 +229,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

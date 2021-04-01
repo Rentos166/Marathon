@@ -21,7 +21,5 @@ namespace Марафон
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Menu());
         }
-        public static User userInfo = new User();
-        public static SqlDataReader sqlDataReader = null;
     }
 }

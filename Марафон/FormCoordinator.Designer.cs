@@ -124,6 +124,7 @@
             this.buttonSpons.TabIndex = 29;
             this.buttonSpons.Text = "Спонсоры";
             this.buttonSpons.UseVisualStyleBackColor = false;
+            this.buttonSpons.Click += new System.EventHandler(this.buttonSpons_Click);
             // 
             // buttonRunners
             // 
@@ -136,6 +137,7 @@
             this.buttonRunners.TabIndex = 27;
             this.buttonRunners.Text = "Бегуны";
             this.buttonRunners.UseVisualStyleBackColor = false;
+            this.buttonRunners.Click += new System.EventHandler(this.buttonRunners_Click);
             // 
             // panel2
             // 

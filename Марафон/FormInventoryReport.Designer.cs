@@ -33,11 +33,11 @@ namespace Марафон
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.downPanel = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.souvenirOrderLabel = new System.Windows.Forms.Label();
             this.tshirtOrderLabel = new System.Windows.Forms.Label();
             this.waterOrderLabel = new System.Windows.Forms.Label();
@@ -69,9 +69,9 @@ namespace Марафон
             this.buttonPrint = new System.Windows.Forms.Button();
             this.crossPictureBox = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel2.SuspendLayout();
             this.downPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,6 +98,7 @@ namespace Марафон
             this.buttonLogout.TabIndex = 8;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // buttonBack
             // 
@@ -110,6 +111,17 @@ namespace Марафон
             this.buttonBack.TabIndex = 7;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour1;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(143, 11);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(501, 80);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // panel2
             // 
@@ -153,16 +165,6 @@ namespace Марафон
             this.labelTime.Size = new System.Drawing.Size(765, 37);
             this.labelTime.TabIndex = 6;
             this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour1;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(143, 11);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(501, 80);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // souvenirOrderLabel
             // 
@@ -599,11 +601,11 @@ namespace Марафон
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormInventoryReport_FormClosing);
             this.Load += new System.EventHandler(this.FormInventoryReport_Load);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.downPanel.ResumeLayout(false);
             this.downPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossPictureBox)).EndInit();
             this.ResumeLayout(false);
 

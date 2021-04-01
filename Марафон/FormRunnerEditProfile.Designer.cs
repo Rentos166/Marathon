@@ -537,7 +537,6 @@
 
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.DateTimePicker dateTimePickerBirth;
         private System.Windows.Forms.ComboBox comboBoxCountry;
         private System.Windows.Forms.TextBox textBoxConPas;
@@ -573,5 +572,6 @@
         private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label labelTime;
+        public System.Windows.Forms.Label labelEmail;
     }
 }

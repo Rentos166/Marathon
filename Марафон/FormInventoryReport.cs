@@ -47,8 +47,19 @@ namespace Марафон
         private void buttonPrint_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Файл отправлен на печать!", "Выполнено!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
             FormInventory inventory = new FormInventory(email);
             inventory.Show();
+            this.Hide();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
             this.Hide();
         }
     }
