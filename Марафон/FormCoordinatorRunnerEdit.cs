@@ -38,7 +38,7 @@ namespace Марафон
                 connectionSql.Open();
                 dataAdapter = new SqlDataAdapter("SELECT dbo.[Users].FirstName, dbo.[Users].LastName, dbo.Runner.Gender,FORMAT([DateOfBirth], '%d.%M.%y') as 'DateOfBirth', " +
                     "dbo.Country.CountryName, dbo.Charity.CharityName, (select SUM(Amount) " +
-                    "from Sponsorship where RegistrationId = [Registration].[RegistrationId]) as 'Amount',dbo.Registration.RaceKitOptionId, [RegistrationStatusId], [Image] " +
+                    "from Sponsorship where RegistrationId = [Registration].[RegistrationId]) as 'Amount',dbo.Registration.RaceKitOptionId, [RegistrationStatusId], dbo.Users.Picture " +
                     "FROM dbo.Registration INNER JOIN dbo.Charity ON dbo.Registration.CharityId = dbo.Charity.CharityId " +
                     "INNER JOIN dbo.Runner ON dbo.Registration.RunnerId = dbo.Runner.RunnerId " +
                     "INNER JOIN dbo.[Users] ON dbo.Runner.Email = dbo.[Users].Email " +
@@ -58,10 +58,13 @@ namespace Марафон
                 packageUserLabel.Text = row[7].ToString();
                 setPictures(Convert.ToInt32(row[8]));
 
-                if (!((byte[])row[9]).All(c => c == 0))
+                if (row[9]!=null)
                 {
-                    MemoryStream memoryStream = new MemoryStream((byte[])row[9]);
-                    userPictureBox.Image = Image.FromStream(memoryStream);
+                    userPictureBox.Image = Image.FromFile("picture/" + row[9]);
+                }
+                else
+                {
+                    userPictureBox.Image = null;
                 }
             }
             catch (Exception exception)
@@ -78,7 +81,7 @@ namespace Марафон
             PictureBox[] pictureBoxes = new PictureBox[] { regPictureBox, payPictureBox, packagePictureBox, startPictureBox };
             for (int i = 0; i < index; i++)
             {
-                pictureBoxes[i].Image = Bitmap.FromFile(@"C:\Users\Ренат\Desktop\Дистант 3 курс\2 семестр\УП 1\WSR 2017Программные решения для бизнеса\TP09_resources\WSR2016_TP09_ресурсы_сессия_5\marathon-skills-2016-status-icons"); //иконка галочки из 5 сессии
+                pictureBoxes[i].Image = Bitmap.FromFile(@"C:\Users\Ренат\Desktop\Дистант 3 курс\2 семестр\УП 1\WSR 2017Программные решения для бизнеса\TP09_resources\WSR2016_TP09_ресурсы_сессия_5\marathon-skills-2016-status-icons\tick-icon.png"); //иконка галочки из 5 сессии
             }
         }
         private void FormCoordinatorRunnerEdit_FormClosing(object sender, FormClosingEventArgs e)
@@ -95,7 +98,7 @@ namespace Марафон
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            FormCoordinatorRunner coordinatorRunner = new FormCoordinatorRunner();
+            FormCoordinatorRunner coordinatorRunner = new FormCoordinatorRunner(email);
             coordinatorRunner.Show();
             this.Hide();
         }
@@ -116,7 +119,7 @@ namespace Марафон
         private void certificateButton_Click(object sender, EventArgs e)
         {
             FormCoordinatorRunnerEdit.ActiveForm.Hide();
-            FormCertificate form = new FormCertificate();
+            FormCertificate form = new FormCertificate(email);
             form.emailInfo = emailUserLabel.Text;
             form.nameInfo = nameUserLabel.Text;
             form.lastNameInfo = lastNameUserLabel.Text;

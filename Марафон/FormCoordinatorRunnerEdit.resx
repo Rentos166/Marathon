@@ -121,7 +121,7 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="regPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxReg.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGgAAABmCAYAAAAnFtTRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAAFM9JREFUeF7tnQmUVNWZxx8KIougKCEeHGCAsBhHiY7IgIQ4M7gkJyiOkKjEDC5E
@@ -216,7 +216,7 @@
         B0qzTQvpm+reAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="startPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxStart.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGgAAABmCAYAAAAnFtTRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAAFM9JREFUeF7tnQmUVNWZxx8KIougKCEeHGCAsBhHiY7IgIQ4M7gkJyiOkKjEDC5E
@@ -311,7 +311,7 @@
         B0qzTQvpm+reAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="packagePictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxPackage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGgAAABmCAYAAAAnFtTRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAAFM9JREFUeF7tnQmUVNWZxx8KIougKCEeHGCAsBhHiY7IgIQ4M7gkJyiOkKjEDC5E
@@ -406,7 +406,7 @@
         B0qzTQvpm+reAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="payPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxPay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGgAAABmCAYAAAAnFtTRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAAFM9JREFUeF7tnQmUVNWZxx8KIougKCEeHGCAsBhHiY7IgIQ4M7gkJyiOkKjEDC5E

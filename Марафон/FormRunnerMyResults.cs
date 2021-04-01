@@ -14,6 +14,7 @@ namespace Марафон
 {
     public partial class FormRunnerMyResults : Form
     {
+        public string email;
         int minAge, maxAge = 0;
         SqlConnection connectionSql;
         SqlDataAdapter dataAdapter;
@@ -32,9 +33,9 @@ namespace Марафон
                 takeAgesAndGender();
                 connectionSql.Open();
 
-                string query = "SELECT [RegistrationId], [MarathonName] as 'Марафон', [EventTypeName] as 'Дистанция', CONVERT(nvarchar, CONVERT(datetime, [RaceTime]/100000.0), 8)  AS 'Время', " +
-                    "(select[PlaceId] from[Place]([MarathonName], [EventTypeName]) where[RegId] = [RegistrationId]) as 'Общее место'," +
-                    $"(select[PlaceId] from[PlaceYear]([MarathonName], [EventTypeName], {minAge}, {maxAge}) where[RegId] = [RegistrationId]) as 'Место по категории'" +
+                string query = "SELECT [RegistrationId], [MarathonName] as 'Марафон', [EventTypeName] as 'Дистанция', CONVERT(nvarchar, CONVERT(datetime, [RaceTime]/100000.0), 8)  AS 'Время'" +
+                    //" (select RegistrationEventId from RegistrationEvent  where RegistrationId = [Registration].[RegistrationId]) as 'Общее место' " +
+                    //$"(select RegistrationEventId from RegistrationEvent, {minAge}, {maxAge}) where RegistrationId = [Registration].[RegistrationId]) as 'Место по категории'" +
                     "FROM[RegistrationEvent] " +
                     "inner join[Event] on[RegistrationEvent].[EventId] = [Event].[EventId] " +
                     "inner join[Marathon] on Event.[MarathonId] = [Marathon].[MarathonId] " +
@@ -74,7 +75,16 @@ namespace Марафон
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            //FormRunnerMenu runnerMenu = new FormRunnerMenu();
+            FormRunnerMenu runnerMenu = new FormRunnerMenu(email);
+            runnerMenu.Show();
+            this.Hide();
+        }
+
+        private void showButton_Click(object sender, EventArgs e)
+        {
+            FormPreviousResult previousResult = new FormPreviousResult();
+            previousResult.Show();
+            this.Hide();
         }
 
         private void takeAgesAndGender()//Выставляем диапазон возраста в зависимости от возраста нашего пользователя

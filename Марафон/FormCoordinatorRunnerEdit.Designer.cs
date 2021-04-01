@@ -34,6 +34,7 @@ namespace Марафон
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -71,8 +72,8 @@ namespace Марафон
             this.packagePictureBox = new System.Windows.Forms.PictureBox();
             this.payPictureBox = new System.Windows.Forms.PictureBox();
             this.userPictureBox = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.regPictureBox)).BeginInit();
@@ -80,7 +81,6 @@ namespace Марафон
             ((System.ComponentModel.ISupportInitialize)(this.packagePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.payPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -121,6 +121,16 @@ namespace Марафон
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(157, 10);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(692, 92);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MediumPurple;
@@ -157,11 +167,11 @@ namespace Марафон
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(232, 17);
+            this.label1.Location = new System.Drawing.Point(354, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(552, 39);
+            this.label1.Size = new System.Drawing.Size(333, 39);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Предыдущие результаты гонок";
+            this.label1.Text = "Изменение бегуна";
             // 
             // timerMarathon
             // 
@@ -526,16 +536,6 @@ namespace Марафон
             this.userPictureBox.TabIndex = 93;
             this.userPictureBox.TabStop = false;
             // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(157, 10);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(692, 92);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
-            // 
             // FormCoordinatorRunnerEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -586,6 +586,7 @@ namespace Марафон
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCoordinatorRunnerEdit_FormClosing);
             this.Load += new System.EventHandler(this.FormCoordinatorRunnerEdit_Load);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -595,7 +596,6 @@ namespace Марафон
             ((System.ComponentModel.ISupportInitialize)(this.packagePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.payPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -34,12 +34,12 @@ namespace Марафон
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.timerMarathon = new System.Windows.Forms.Timer(this.components);
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.grayPanel = new System.Windows.Forms.Panel();
             this.raceComboBox = new System.Windows.Forms.ComboBox();
             this.raceLabel = new System.Windows.Forms.Label();
@@ -55,9 +55,9 @@ namespace Марафон
             this.marathonLabel = new System.Windows.Forms.Label();
             this.okPanek = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.grayPanel.SuspendLayout();
             this.notOkPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.apprivePictureBox)).BeginInit();
@@ -102,6 +102,16 @@ namespace Марафон
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(157, 10);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(692, 92);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // panel3
             // 
@@ -149,16 +159,6 @@ namespace Марафон
             // 
             this.timerMarathon.Tick += new System.EventHandler(this.timerMarathon_Tick);
             // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(157, 10);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(692, 92);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
-            // 
             // grayPanel
             // 
             this.grayPanel.BackColor = System.Drawing.Color.SeaGreen;
@@ -195,7 +195,7 @@ namespace Марафон
             // notOkPanel
             // 
             this.notOkPanel.Controls.Add(this.errorLabel);
-            this.notOkPanel.Location = new System.Drawing.Point(80, 264);
+            this.notOkPanel.Location = new System.Drawing.Point(83, 267);
             this.notOkPanel.Name = "notOkPanel";
             this.notOkPanel.Size = new System.Drawing.Size(826, 402);
             this.notOkPanel.TabIndex = 83;
@@ -224,7 +224,7 @@ namespace Марафон
             // moneyLabel
             // 
             this.moneyLabel.Font = new System.Drawing.Font("Arial", 14.25F);
-            this.moneyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.moneyLabel.ForeColor = System.Drawing.Color.Black;
             this.moneyLabel.Location = new System.Drawing.Point(192, 355);
             this.moneyLabel.Name = "moneyLabel";
             this.moneyLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -236,7 +236,7 @@ namespace Марафон
             // congratulationsLabel
             // 
             this.congratulationsLabel.Font = new System.Drawing.Font("Arial", 14.25F);
-            this.congratulationsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.congratulationsLabel.ForeColor = System.Drawing.Color.Black;
             this.congratulationsLabel.Location = new System.Drawing.Point(87, 121);
             this.congratulationsLabel.Name = "congratulationsLabel";
             this.congratulationsLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -249,7 +249,7 @@ namespace Марафон
             // cityLabel
             // 
             this.cityLabel.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cityLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cityLabel.ForeColor = System.Drawing.Color.Black;
             this.cityLabel.Location = new System.Drawing.Point(229, 301);
             this.cityLabel.Name = "cityLabel";
             this.cityLabel.Size = new System.Drawing.Size(400, 24);
@@ -270,7 +270,7 @@ namespace Марафон
             // 
             this.certificateLabel.AutoSize = true;
             this.certificateLabel.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.certificateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.certificateLabel.ForeColor = System.Drawing.Color.Black;
             this.certificateLabel.Location = new System.Drawing.Point(217, 178);
             this.certificateLabel.Name = "certificateLabel";
             this.certificateLabel.Size = new System.Drawing.Size(412, 41);
@@ -281,7 +281,7 @@ namespace Марафон
             // 
             this.inLabel.AutoSize = true;
             this.inLabel.Font = new System.Drawing.Font("Arial", 14.25F);
-            this.inLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.inLabel.ForeColor = System.Drawing.Color.Black;
             this.inLabel.Location = new System.Drawing.Point(417, 229);
             this.inLabel.Name = "inLabel";
             this.inLabel.Size = new System.Drawing.Size(20, 22);
@@ -291,7 +291,7 @@ namespace Марафон
             // marathonLabel
             // 
             this.marathonLabel.Font = new System.Drawing.Font("Arial", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.marathonLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.marathonLabel.ForeColor = System.Drawing.Color.Black;
             this.marathonLabel.Location = new System.Drawing.Point(224, 262);
             this.marathonLabel.Name = "marathonLabel";
             this.marathonLabel.Size = new System.Drawing.Size(419, 30);
@@ -334,11 +334,11 @@ namespace Марафон
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCertificate_FormClosing);
             this.Load += new System.EventHandler(this.FormCertificate_Load);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.grayPanel.ResumeLayout(false);
             this.grayPanel.PerformLayout();
             this.notOkPanel.ResumeLayout(false);

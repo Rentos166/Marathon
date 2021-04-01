@@ -96,6 +96,7 @@ namespace Марафон
             this.showButton.TabIndex = 76;
             this.showButton.Text = "Показать все результаты";
             this.showButton.UseVisualStyleBackColor = false;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
             // ageLoadLabel
             // 

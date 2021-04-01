@@ -69,6 +69,7 @@
             this.buttonLogout.TabIndex = 8;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // buttonBack
             // 
@@ -81,6 +82,7 @@
             this.buttonBack.TabIndex = 7;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // pictureBoxLogo
             // 

@@ -15,10 +15,11 @@ namespace Марафон
     {
         SqlConnection connectionSql;
         SqlDataAdapter dataAdapter;
-
+        public string email;
         public string emailInfo, nameInfo, lastNameInfo;
-        public FormCertificate()
+        public FormCertificate(string email)
         {
+            this.email = email;
             connectionSql = new SqlConnection(Connection.GetString());
             InitializeComponent();
         }
@@ -62,9 +63,9 @@ namespace Марафон
             {
                 notOkPanel.Visible = true;
                 connectionSql.Open();
-                dataAdapter = new SqlDataAdapter("SELECT [MarathonName] as 'Марафон', [CityName] +', '+ [CountryCode] as 'Place', [EventTypeName]," +
+                dataAdapter = new SqlDataAdapter("SELECT [MarathonName] as 'Марафон', [CityName] +', '+ [CountryCode] as 'Place', [EventTypeName], [SponsorshipTarget] as 'Amount'," +
                     " CONVERT(nvarchar, CONVERT(datetime, [RaceTime]/100000.0), 8)  AS 'Время', " +
-                    " (select SUM(Amount) from Sponsorship where RegistrationId = [Registration].[RegistrationId]) as 'Amount' FROM[RegistrationEvent]" +
+                    "(select RegistrationEventId from RegistrationEvent  where RegistrationId = [Registration].[RegistrationId]) as 'Общее место', [CharityLogo] FROM[RegistrationEvent]" +
                     " inner join[Event] on[RegistrationEvent].[EventId] = [Event].[EventId] " +
                     "inner join[Marathon] on Event.[MarathonId] = [Marathon].[MarathonId] " +
                     "inner join[EventType] on Event.EventTypeId = EventType.EventTypeId " +
@@ -81,11 +82,11 @@ namespace Марафон
                     if (dataRow[3].ToString() != "" && dataRow[3].ToString() != "00:00:00")
                     {
                         notOkPanel.Visible = false;
-                        congratulationsLabel.Text = $"Поздравляем {nameInfo} {lastNameInfo} с участием в {dataRow[2]}. Ваши результаты время {dataRow[3]} и занятое место - {dataRow[4]}-ое!";
+                        congratulationsLabel.Text = $"Поздравляем {nameInfo} {lastNameInfo} с участием в {dataRow[2]}. Ваши результаты время {dataRow[4]} и занятое место - {dataRow[5]}-ое!";
                         marathonLabel.Text = dataRow[0].ToString();
                         cityLabel.Text = dataRow[1].ToString();
-                        moneyLabel.Text = $"Вы также заработали ${dataRow[6]} для вашей благотворительной организации!";
-                        logoPictureBox.Image = Bitmap.FromFile(@"D:\Загрузки\Задание\Ресурсы\WSR2016_TP09_общие_ресурсы\marathon-skills-2016-charity-data\" + dataRow[5].ToString());
+                        moneyLabel.Text = $"Вы также заработали ${dataRow[3]} для вашей благотворительной организации!";
+                        logoPictureBox.Image = Bitmap.FromFile(@"C:\Users\Ренат\Desktop\Дистант 3 курс\2 семестр\УП 1\WSR 2017Программные решения для бизнеса\TP09_resources\WSR2016_TP09_общие_ресурсы\marathon-skills-2016-charity-data\marathon-skills-2016-charity-data\" + dataRow[6].ToString());
                     }
                     else
                     {
@@ -119,7 +120,7 @@ namespace Марафон
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            FormCoordinatorRunnerEdit runnerEdit = new FormCoordinatorRunnerEdit();
+            FormCoordinator runnerEdit = new FormCoordinator(email);
             runnerEdit.Show();
             this.Hide();
         }

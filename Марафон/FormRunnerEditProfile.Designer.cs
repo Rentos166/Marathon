@@ -208,7 +208,7 @@
             this.textBoxPicture.Multiline = true;
             this.textBoxPicture.Name = "textBoxPicture";
             this.textBoxPicture.ReadOnly = true;
-            this.textBoxPicture.Size = new System.Drawing.Size(218, 31);
+            this.textBoxPicture.Size = new System.Drawing.Size(218, 43);
             this.textBoxPicture.TabIndex = 114;
             // 
             // textBoxPassword
@@ -225,9 +225,9 @@
             this.buttonShowImage.BackColor = System.Drawing.Color.Gold;
             this.buttonShowImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonShowImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonShowImage.Location = new System.Drawing.Point(773, 395);
+            this.buttonShowImage.Location = new System.Drawing.Point(774, 395);
             this.buttonShowImage.Name = "buttonShowImage";
-            this.buttonShowImage.Size = new System.Drawing.Size(173, 31);
+            this.buttonShowImage.Size = new System.Drawing.Size(173, 43);
             this.buttonShowImage.TabIndex = 113;
             this.buttonShowImage.Text = "Просмотр...";
             this.buttonShowImage.UseVisualStyleBackColor = false;

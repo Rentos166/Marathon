@@ -19,8 +19,9 @@ namespace Марафон
         string connection = @"Data Source=DESKTOP-PKUSCSQ\SQLEXPRESS;Initial Catalog=Marathon;Integrated Security=True";
         public string email;
 
-        public FormCoordinatorRunner()
+        public FormCoordinatorRunner(string email)
         {
+            this.email = email;
             connectionSql = new SqlConnection(Connection.GetString());
             InitializeComponent();
         }

@@ -33,7 +33,7 @@ namespace Марафон
 
         private void buttonRunners_Click(object sender, EventArgs e)
         {
-            FormCoordinatorRunner coordinatorRunner = new FormCoordinatorRunner();
+            FormCoordinatorRunner coordinatorRunner = new FormCoordinatorRunner(email);
             coordinatorRunner.Show();
             this.Hide();
         }
@@ -41,6 +41,20 @@ namespace Марафон
         private void buttonSpons_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
         }
     }
 }
