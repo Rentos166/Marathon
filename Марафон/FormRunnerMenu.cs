@@ -76,7 +76,9 @@ namespace Марафон
 
         private void buttonMySpon_Click(object sender, EventArgs e)
         {
-
+            FormRunnerMySponsor mySponsor = new FormRunnerMySponsor(email);
+            mySponsor.Show();
+            this.Hide();
         }
     }
 }

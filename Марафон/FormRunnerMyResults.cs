@@ -33,9 +33,8 @@ namespace Марафон
                 takeAgesAndGender();
                 connectionSql.Open();
 
-                string query = "SELECT [RegistrationId], [MarathonName] as 'Марафон', [EventTypeName] as 'Дистанция', CONVERT(nvarchar, CONVERT(datetime, [RaceTime]/100000.0), 8)  AS 'Время'" +
-                    //" (select RegistrationEventId from RegistrationEvent  where RegistrationId = [Registration].[RegistrationId]) as 'Общее место' " +
-                    //$"(select RegistrationEventId from RegistrationEvent, {minAge}, {maxAge}) where RegistrationId = [Registration].[RegistrationId]) as 'Место по категории'" +
+                string query = "SELECT [RegistrationId], [MarathonName] as 'Марафон', [EventTypeName] as 'Дистанция', CONVERT(nvarchar, CONVERT(datetime, [RaceTime]/100000.0), 8)  as 'Время', [RegistrationEventId] as 'Общее место'" +
+                    //$(select[RegistrationEventId], { minAge}, { maxAge}) as 'Место по категории'+
                     "FROM[RegistrationEvent] " +
                     "inner join[Event] on[RegistrationEvent].[EventId] = [Event].[EventId] " +
                     "inner join[Marathon] on Event.[MarathonId] = [Marathon].[MarathonId] " +
@@ -84,6 +83,13 @@ namespace Марафон
         {
             FormPreviousResult previousResult = new FormPreviousResult();
             previousResult.Show();
+            this.Hide();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
             this.Hide();
         }
 

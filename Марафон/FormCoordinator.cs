@@ -40,7 +40,9 @@ namespace Марафон
 
         private void buttonSpons_Click(object sender, EventArgs e)
         {
-
+            FormCoordinatorSponsors coordinatorSponsors = new FormCoordinatorSponsors(email);
+            coordinatorSponsors.Show();
+            this.Hide();
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
