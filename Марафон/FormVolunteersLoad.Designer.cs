@@ -30,6 +30,7 @@ namespace Марафон
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVolunteersLoad));
             this.openFileDialogVol = new System.Windows.Forms.OpenFileDialog();
             this.labelGender = new System.Windows.Forms.Label();
             this.labelCountryCode = new System.Windows.Forms.Label();
@@ -52,14 +53,14 @@ namespace Марафон
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonOpen = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // openFileDialogVol
@@ -299,6 +300,16 @@ namespace Марафон
             this.panel4.Size = new System.Drawing.Size(1005, 102);
             this.panel4.TabIndex = 46;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
+            this.pictureBox1.Location = new System.Drawing.Point(151, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(706, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -334,16 +345,6 @@ namespace Марафон
             this.panel2.Size = new System.Drawing.Size(1005, 67);
             this.panel2.TabIndex = 47;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
-            this.pictureBox1.Location = new System.Drawing.Point(151, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(706, 92);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // FormVolunteersLoad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -369,6 +370,7 @@ namespace Марафон
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.buttonOpen);
             this.Controls.Add(this.panel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1016, 741);
             this.MinimumSize = new System.Drawing.Size(1016, 741);
             this.Name = "FormVolunteersLoad";
@@ -379,9 +381,9 @@ namespace Марафон
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

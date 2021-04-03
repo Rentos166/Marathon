@@ -292,7 +292,7 @@ namespace Марафон
             this.emailUserLabel.AutoSize = true;
             this.emailUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.emailUserLabel.ForeColor = System.Drawing.Color.Black;
-            this.emailUserLabel.Location = new System.Drawing.Point(262, 236);
+            this.emailUserLabel.Location = new System.Drawing.Point(217, 236);
             this.emailUserLabel.Name = "emailUserLabel";
             this.emailUserLabel.Size = new System.Drawing.Size(55, 24);
             this.emailUserLabel.TabIndex = 92;
@@ -303,7 +303,7 @@ namespace Марафон
             this.nameUserLabel.AutoSize = true;
             this.nameUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.nameUserLabel.ForeColor = System.Drawing.Color.Black;
-            this.nameUserLabel.Location = new System.Drawing.Point(260, 267);
+            this.nameUserLabel.Location = new System.Drawing.Point(215, 267);
             this.nameUserLabel.Name = "nameUserLabel";
             this.nameUserLabel.Size = new System.Drawing.Size(46, 24);
             this.nameUserLabel.TabIndex = 91;
@@ -314,7 +314,7 @@ namespace Марафон
             this.lastNameUserLabel.AutoSize = true;
             this.lastNameUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lastNameUserLabel.ForeColor = System.Drawing.Color.Black;
-            this.lastNameUserLabel.Location = new System.Drawing.Point(258, 296);
+            this.lastNameUserLabel.Location = new System.Drawing.Point(213, 296);
             this.lastNameUserLabel.Name = "lastNameUserLabel";
             this.lastNameUserLabel.Size = new System.Drawing.Size(91, 24);
             this.lastNameUserLabel.TabIndex = 90;
@@ -325,7 +325,7 @@ namespace Марафон
             this.genderUserLabel.AutoSize = true;
             this.genderUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.genderUserLabel.ForeColor = System.Drawing.Color.Black;
-            this.genderUserLabel.Location = new System.Drawing.Point(260, 327);
+            this.genderUserLabel.Location = new System.Drawing.Point(215, 327);
             this.genderUserLabel.Name = "genderUserLabel";
             this.genderUserLabel.Size = new System.Drawing.Size(87, 24);
             this.genderUserLabel.TabIndex = 89;
@@ -336,7 +336,7 @@ namespace Марафон
             this.dateUserLabel.AutoSize = true;
             this.dateUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateUserLabel.ForeColor = System.Drawing.Color.Black;
-            this.dateUserLabel.Location = new System.Drawing.Point(260, 358);
+            this.dateUserLabel.Location = new System.Drawing.Point(215, 358);
             this.dateUserLabel.Name = "dateUserLabel";
             this.dateUserLabel.Size = new System.Drawing.Size(148, 24);
             this.dateUserLabel.TabIndex = 88;
@@ -347,7 +347,7 @@ namespace Марафон
             this.countryUserLabel.AutoSize = true;
             this.countryUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.countryUserLabel.ForeColor = System.Drawing.Color.Black;
-            this.countryUserLabel.Location = new System.Drawing.Point(258, 390);
+            this.countryUserLabel.Location = new System.Drawing.Point(213, 390);
             this.countryUserLabel.Name = "countryUserLabel";
             this.countryUserLabel.Size = new System.Drawing.Size(87, 24);
             this.countryUserLabel.TabIndex = 87;
@@ -358,7 +358,7 @@ namespace Марафон
             this.orgUserLabel.AutoSize = true;
             this.orgUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.orgUserLabel.ForeColor = System.Drawing.Color.Black;
-            this.orgUserLabel.Location = new System.Drawing.Point(258, 419);
+            this.orgUserLabel.Location = new System.Drawing.Point(213, 419);
             this.orgUserLabel.Name = "orgUserLabel";
             this.orgUserLabel.Size = new System.Drawing.Size(142, 24);
             this.orgUserLabel.TabIndex = 86;
@@ -369,7 +369,7 @@ namespace Марафон
             this.moneyUserLabel.AutoSize = true;
             this.moneyUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.moneyUserLabel.ForeColor = System.Drawing.Color.Black;
-            this.moneyUserLabel.Location = new System.Drawing.Point(258, 448);
+            this.moneyUserLabel.Location = new System.Drawing.Point(213, 448);
             this.moneyUserLabel.Name = "moneyUserLabel";
             this.moneyUserLabel.Size = new System.Drawing.Size(50, 24);
             this.moneyUserLabel.TabIndex = 85;
@@ -380,7 +380,7 @@ namespace Марафон
             this.packageUserLabel.AutoSize = true;
             this.packageUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.packageUserLabel.ForeColor = System.Drawing.Color.Black;
-            this.packageUserLabel.Location = new System.Drawing.Point(255, 479);
+            this.packageUserLabel.Location = new System.Drawing.Point(210, 479);
             this.packageUserLabel.Name = "packageUserLabel";
             this.packageUserLabel.Size = new System.Drawing.Size(102, 24);
             this.packageUserLabel.TabIndex = 84;
@@ -391,7 +391,7 @@ namespace Марафон
             this.packageLabel.AutoSize = true;
             this.packageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.packageLabel.ForeColor = System.Drawing.Color.Navy;
-            this.packageLabel.Location = new System.Drawing.Point(82, 479);
+            this.packageLabel.Location = new System.Drawing.Point(37, 479);
             this.packageLabel.Name = "packageLabel";
             this.packageLabel.Size = new System.Drawing.Size(174, 24);
             this.packageLabel.TabIndex = 83;
@@ -402,7 +402,7 @@ namespace Марафон
             this.nameLabel.AutoSize = true;
             this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.nameLabel.ForeColor = System.Drawing.Color.Navy;
-            this.nameLabel.Location = new System.Drawing.Point(205, 267);
+            this.nameLabel.Location = new System.Drawing.Point(160, 267);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(51, 24);
             this.nameLabel.TabIndex = 82;
@@ -413,7 +413,7 @@ namespace Марафон
             this.lastNameLabel.AutoSize = true;
             this.lastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lastNameLabel.ForeColor = System.Drawing.Color.Navy;
-            this.lastNameLabel.Location = new System.Drawing.Point(162, 296);
+            this.lastNameLabel.Location = new System.Drawing.Point(117, 296);
             this.lastNameLabel.Name = "lastNameLabel";
             this.lastNameLabel.Size = new System.Drawing.Size(96, 24);
             this.lastNameLabel.TabIndex = 81;
@@ -424,7 +424,7 @@ namespace Марафон
             this.genderLabel.AutoSize = true;
             this.genderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.genderLabel.ForeColor = System.Drawing.Color.Navy;
-            this.genderLabel.Location = new System.Drawing.Point(207, 327);
+            this.genderLabel.Location = new System.Drawing.Point(162, 327);
             this.genderLabel.Name = "genderLabel";
             this.genderLabel.Size = new System.Drawing.Size(49, 24);
             this.genderLabel.TabIndex = 80;
@@ -435,7 +435,7 @@ namespace Марафон
             this.dateLabel.AutoSize = true;
             this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateLabel.ForeColor = System.Drawing.Color.Navy;
-            this.dateLabel.Location = new System.Drawing.Point(104, 358);
+            this.dateLabel.Location = new System.Drawing.Point(59, 358);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(155, 24);
             this.dateLabel.TabIndex = 79;
@@ -446,7 +446,7 @@ namespace Марафон
             this.countryLabel.AutoSize = true;
             this.countryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.countryLabel.ForeColor = System.Drawing.Color.Navy;
-            this.countryLabel.Location = new System.Drawing.Point(176, 390);
+            this.countryLabel.Location = new System.Drawing.Point(131, 390);
             this.countryLabel.Name = "countryLabel";
             this.countryLabel.Size = new System.Drawing.Size(80, 24);
             this.countryLabel.TabIndex = 78;
@@ -457,7 +457,7 @@ namespace Марафон
             this.orgLabel.AutoSize = true;
             this.orgLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.orgLabel.ForeColor = System.Drawing.Color.Navy;
-            this.orgLabel.Location = new System.Drawing.Point(119, 417);
+            this.orgLabel.Location = new System.Drawing.Point(74, 417);
             this.orgLabel.Name = "orgLabel";
             this.orgLabel.Size = new System.Drawing.Size(137, 24);
             this.orgLabel.TabIndex = 77;
@@ -468,7 +468,7 @@ namespace Марафон
             this.moneyLabel.AutoSize = true;
             this.moneyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.moneyLabel.ForeColor = System.Drawing.Color.Navy;
-            this.moneyLabel.Location = new System.Drawing.Point(106, 448);
+            this.moneyLabel.Location = new System.Drawing.Point(61, 448);
             this.moneyLabel.Name = "moneyLabel";
             this.moneyLabel.Size = new System.Drawing.Size(150, 24);
             this.moneyLabel.TabIndex = 76;
@@ -479,7 +479,7 @@ namespace Марафон
             this.emailLabel.AutoSize = true;
             this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.emailLabel.ForeColor = System.Drawing.Color.Navy;
-            this.emailLabel.Location = new System.Drawing.Point(198, 236);
+            this.emailLabel.Location = new System.Drawing.Point(153, 236);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(62, 24);
             this.emailLabel.TabIndex = 75;
@@ -487,7 +487,6 @@ namespace Марафон
             // 
             // regPictureBox
             // 
-            this.regPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("regPictureBox.Image")));
             this.regPictureBox.Location = new System.Drawing.Point(823, 252);
             this.regPictureBox.Name = "regPictureBox";
             this.regPictureBox.Size = new System.Drawing.Size(55, 53);
@@ -497,7 +496,6 @@ namespace Марафон
             // 
             // startPictureBox
             // 
-            this.startPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("startPictureBox.Image")));
             this.startPictureBox.Location = new System.Drawing.Point(823, 465);
             this.startPictureBox.Name = "startPictureBox";
             this.startPictureBox.Size = new System.Drawing.Size(55, 53);
@@ -507,7 +505,6 @@ namespace Марафон
             // 
             // packagePictureBox
             // 
-            this.packagePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("packagePictureBox.Image")));
             this.packagePictureBox.Location = new System.Drawing.Point(823, 396);
             this.packagePictureBox.Name = "packagePictureBox";
             this.packagePictureBox.Size = new System.Drawing.Size(55, 53);
@@ -517,7 +514,6 @@ namespace Марафон
             // 
             // payPictureBox
             // 
-            this.payPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("payPictureBox.Image")));
             this.payPictureBox.Location = new System.Drawing.Point(823, 327);
             this.payPictureBox.Name = "payPictureBox";
             this.payPictureBox.Size = new System.Drawing.Size(55, 53);
@@ -578,6 +574,7 @@ namespace Марафон
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1006, 786);
             this.MinimumSize = new System.Drawing.Size(1006, 786);
             this.Name = "FormCoordinatorRunnerEdit";

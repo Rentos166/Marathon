@@ -59,12 +59,12 @@ namespace Марафон
             this.SelectPictureBox = new System.Windows.Forms.PictureBox();
             this.nameSelectLabel = new System.Windows.Forms.Label();
             this.downPanel = new System.Windows.Forms.Panel();
+            this.labelTime = new System.Windows.Forms.Label();
             this.resultLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonBack = new System.Windows.Forms.Button();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.labelTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.distance5PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.distance4PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.distance3PictureBox)).BeginInit();
@@ -428,6 +428,17 @@ namespace Марафон
             this.downPanel.Size = new System.Drawing.Size(848, 60);
             this.downPanel.TabIndex = 74;
             // 
+            // labelTime
+            // 
+            this.labelTime.AutoSize = true;
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTime.ForeColor = System.Drawing.Color.GhostWhite;
+            this.labelTime.Location = new System.Drawing.Point(42, 12);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(765, 37);
+            this.labelTime.TabIndex = 7;
+            this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
+            // 
             // resultLabel
             // 
             this.resultLabel.AutoSize = true;
@@ -483,17 +494,6 @@ namespace Марафон
             this.panel2.Size = new System.Drawing.Size(850, 75);
             this.panel2.TabIndex = 81;
             // 
-            // labelTime
-            // 
-            this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTime.ForeColor = System.Drawing.Color.GhostWhite;
-            this.labelTime.Location = new System.Drawing.Point(42, 12);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(765, 37);
-            this.labelTime.TabIndex = 7;
-            this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
-            // 
             // FormHowLongMarathon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -507,6 +507,7 @@ namespace Марафон
             this.Controls.Add(this.SelectPictureBox);
             this.Controls.Add(this.nameSelectLabel);
             this.Controls.Add(this.downPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormHowLongMarathon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Насколько долгий марафон";

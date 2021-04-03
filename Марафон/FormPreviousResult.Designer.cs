@@ -32,6 +32,7 @@ namespace Марафон
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPreviousResult));
             this.labelTime = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.timerMarathon = new System.Windows.Forms.Timer(this.components);
@@ -362,6 +363,7 @@ namespace Марафон
             this.Controls.Add(this.ageLabel);
             this.Controls.Add(this.sexComboBox);
             this.Controls.Add(this.distanceComboBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormPreviousResult";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Предыдущие результаты";

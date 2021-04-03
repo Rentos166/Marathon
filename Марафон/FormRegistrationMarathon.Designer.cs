@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistrationMarathon));
             this.labelMon = new System.Windows.Forms.Label();
             this.labelSum = new System.Windows.Forms.Label();
             this.labelRegCon = new System.Windows.Forms.Label();
@@ -465,6 +466,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.labelMoreInfo);
             this.Controls.Add(this.panel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1016, 741);
             this.MinimumSize = new System.Drawing.Size(1016, 741);
             this.Name = "FormRegistrationMarathon";

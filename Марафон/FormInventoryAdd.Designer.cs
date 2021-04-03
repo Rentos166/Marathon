@@ -30,16 +30,17 @@ namespace Марафон
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInventoryAdd));
             this.label1 = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.timerMarathon = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonSave = new System.Windows.Forms.Button();
             this.downPanel = new System.Windows.Forms.Panel();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.souvenirTextBox = new System.Windows.Forms.MaskedTextBox();
             this.tshirtTextBox = new System.Windows.Forms.MaskedTextBox();
             this.waterTextBox = new System.Windows.Forms.MaskedTextBox();
@@ -55,9 +56,9 @@ namespace Марафон
             this.rfidLabel = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel2.SuspendLayout();
             this.downPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -121,6 +122,16 @@ namespace Марафон
             this.panel4.Size = new System.Drawing.Size(850, 93);
             this.panel4.TabIndex = 270;
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour1;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(553, 80);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // timerMarathon
             // 
             this.timerMarathon.Enabled = true;
@@ -160,16 +171,6 @@ namespace Марафон
             this.downPanel.Name = "downPanel";
             this.downPanel.Size = new System.Drawing.Size(850, 60);
             this.downPanel.TabIndex = 210;
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour1;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(553, 80);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // souvenirTextBox
             // 
@@ -353,6 +354,7 @@ namespace Марафон
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.downPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(866, 664);
             this.MinimumSize = new System.Drawing.Size(866, 664);
             this.Name = "FormInventoryAdd";
@@ -361,11 +363,11 @@ namespace Марафон
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormInventoryAdd_FormClosing);
             this.Load += new System.EventHandler(this.FormInventoryAdd_Load);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.downPanel.ResumeLayout(false);
             this.downPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

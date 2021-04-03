@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormWhitchRunner));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -177,7 +178,9 @@
             this.Controls.Add(this.buttonNewRunner);
             this.Controls.Add(this.buttonRunnerBefore);
             this.Controls.Add(this.buttonLogin);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormWhitchRunner";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Проверка уже введенных бегунов";
             this.Load += new System.EventHandler(this.FormWhitchRunner_Load);
             this.panel2.ResumeLayout(false);

@@ -30,6 +30,7 @@ namespace Марафон
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddEditCharity));
             this.openFileDialogPic = new System.Windows.Forms.OpenFileDialog();
             this.label8 = new System.Windows.Forms.Label();
             this.buttonImage = new System.Windows.Forms.Button();
@@ -325,6 +326,7 @@ namespace Марафон
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.panel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1016, 741);
             this.MinimumSize = new System.Drawing.Size(1016, 741);
             this.Name = "FormAddEditCharity";

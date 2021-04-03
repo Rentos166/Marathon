@@ -113,7 +113,13 @@ namespace Марафон
 
         private void printButton_Click(object sender, EventArgs e)
         {
-
+            FormCoordinatorRunnerEdit.ActiveForm.Hide();
+            FormCertificate form = new FormCertificate(email);
+            form.emailInfo = emailUserLabel.Text;
+            form.nameInfo = nameUserLabel.Text;
+            form.lastNameInfo = lastNameUserLabel.Text;
+            form.Show();
+            MessageBox.Show("Бейдж отправлен на печать!", "Печать бейджа", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void certificateButton_Click(object sender, EventArgs e)

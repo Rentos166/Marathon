@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSponsorMoreInfoFond));
             this.richTextBoxInfo = new System.Windows.Forms.RichTextBox();
             this.textBoxFond = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -100,7 +101,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBoxLogoFond);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSponsorMoreInfoFond";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Информация о благотворительной организации";
             this.Load += new System.EventHandler(this.FormSponsorMoreInfoFond_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoFond)).EndInit();

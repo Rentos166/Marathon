@@ -23,7 +23,6 @@ namespace Марафон
         {
             FormContacts formContacts = new FormContacts();
             formContacts.Show();
-            this.Hide();
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)

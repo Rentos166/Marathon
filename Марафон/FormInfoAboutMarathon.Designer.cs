@@ -74,7 +74,7 @@
             this.panel2.Controls.Add(this.labelInfo);
             this.panel2.Location = new System.Drawing.Point(-5, 93);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1005, 103);
+            this.panel2.Size = new System.Drawing.Size(1143, 103);
             this.panel2.TabIndex = 31;
             // 
             // labelInfo
@@ -96,7 +96,7 @@
             this.panel4.Controls.Add(this.pictureBoxLogo);
             this.panel4.Location = new System.Drawing.Point(-4, -1);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1005, 102);
+            this.panel4.Size = new System.Drawing.Size(1142, 102);
             this.panel4.TabIndex = 30;
             // 
             // buttonBack
@@ -118,7 +118,7 @@
             this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
             this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(839, 92);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(973, 92);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLogo.TabIndex = 7;
             this.pictureBoxLogo.TabStop = false;
@@ -130,7 +130,7 @@
             this.panel3.Controls.Add(this.labelTime);
             this.panel3.Location = new System.Drawing.Point(-6, 703);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1005, 73);
+            this.panel3.Size = new System.Drawing.Size(1144, 73);
             this.panel3.TabIndex = 29;
             // 
             // labelTime
@@ -218,7 +218,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
-            this.ClientSize = new System.Drawing.Size(995, 775);
+            this.ClientSize = new System.Drawing.Size(1134, 775);
             this.Controls.Add(this.labelInfoMarathon);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
@@ -229,8 +229,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBoxMarathon);
-            this.MaximumSize = new System.Drawing.Size(1011, 814);
-            this.MinimumSize = new System.Drawing.Size(1011, 814);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormInfoAboutMarathon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Информация о Marathon Skills 2016";

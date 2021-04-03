@@ -73,6 +73,7 @@ namespace Марафон
             this.totalNumberLabel = new System.Windows.Forms.Label();
             this.totalLabel = new System.Windows.Forms.Label();
             this.downPanel = new System.Windows.Forms.Panel();
+            this.labelTime = new System.Windows.Forms.Label();
             this.souvenirTypeBLabel = new System.Windows.Forms.Label();
             this.tshirtTypeBLabel = new System.Windows.Forms.Label();
             this.waterTypeBLabel = new System.Windows.Forms.Label();
@@ -89,10 +90,9 @@ namespace Марафон
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.labelTime = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.basebalTypeAPictureBox = new System.Windows.Forms.PictureBox();
             this.waterTypeAPictureBox = new System.Windows.Forms.PictureBox();
             this.tshirtTypeAPictureBox = new System.Windows.Forms.PictureBox();
@@ -101,8 +101,8 @@ namespace Марафон
             this.tshirtTypeBPictureBox = new System.Windows.Forms.PictureBox();
             this.downPanel.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.basebalTypeAPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterTypeAPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tshirtTypeAPictureBox)).BeginInit();
@@ -650,6 +650,17 @@ namespace Марафон
             this.downPanel.Size = new System.Drawing.Size(850, 60);
             this.downPanel.TabIndex = 147;
             // 
+            // labelTime
+            // 
+            this.labelTime.AutoSize = true;
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTime.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.labelTime.Location = new System.Drawing.Point(45, 14);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(765, 37);
+            this.labelTime.TabIndex = 6;
+            this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
+            // 
             // souvenirTypeBLabel
             // 
             this.souvenirTypeBLabel.BackColor = System.Drawing.SystemColors.Control;
@@ -848,16 +859,15 @@ namespace Марафон
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // labelTime
+            // pictureBoxLogo
             // 
-            this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTime.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelTime.Location = new System.Drawing.Point(45, 14);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(765, 37);
-            this.labelTime.TabIndex = 6;
-            this.labelTime.Text = "4 дней 18 часов и 18 минут до старта марафона!";
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour1;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(553, 80);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // panel2
             // 
@@ -880,16 +890,6 @@ namespace Марафон
             this.label1.TabIndex = 6;
             this.label1.Text = "Загрузка волонтеров";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour1;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(553, 80);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // basebalTypeAPictureBox
             // 
@@ -1031,6 +1031,7 @@ namespace Марафон
             this.Controls.Add(this.basebalTypeCLabel);
             this.Controls.Add(this.rfidTypeCLabel);
             this.Controls.Add(this.idTypeCLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(866, 664);
             this.MinimumSize = new System.Drawing.Size(866, 664);
             this.Name = "FormInventory";
@@ -1041,9 +1042,9 @@ namespace Марафон
             this.downPanel.ResumeLayout(false);
             this.downPanel.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.basebalTypeAPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.waterTypeAPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tshirtTypeAPictureBox)).EndInit();

@@ -245,6 +245,7 @@ namespace Марафон
                         {
 
                         }
+                        MessageBox.Show("Ваши данные изменены и сохранены!", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         FormRunnerMenu formMenuRunner = new FormRunnerMenu(email);
                         formMenuRunner.Show();
                         this.Hide();

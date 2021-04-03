@@ -29,6 +29,7 @@ namespace Марафон
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCheckPointStart3));
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -233,6 +234,7 @@ namespace Марафон
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBoxEnergyBars);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(486, 639);
             this.MinimumSize = new System.Drawing.Size(486, 639);
             this.Name = "FormCheckPointStart3";

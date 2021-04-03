@@ -29,6 +29,7 @@ namespace Марафон
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInventoryReport));
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonLogout = new System.Windows.Forms.Button();
@@ -68,6 +69,7 @@ namespace Марафон
             this.idLabel = new System.Windows.Forms.Label();
             this.buttonPrint = new System.Windows.Forms.Button();
             this.crossPictureBox = new System.Windows.Forms.PictureBox();
+            this.timerMarathon = new System.Windows.Forms.Timer(this.components);
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel2.SuspendLayout();
@@ -554,6 +556,10 @@ namespace Марафон
             this.crossPictureBox.TabIndex = 304;
             this.crossPictureBox.TabStop = false;
             // 
+            // timerMarathon
+            // 
+            this.timerMarathon.Tick += new System.EventHandler(this.timerMarathon_Tick);
+            // 
             // FormInventoryReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -593,6 +599,7 @@ namespace Марафон
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.downPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(816, 599);
             this.MinimumSize = new System.Drawing.Size(816, 599);
             this.Name = "FormInventoryReport";
@@ -651,5 +658,6 @@ namespace Марафон
         private System.Windows.Forms.Label idLabel;
         private System.Windows.Forms.Button buttonPrint;
         private System.Windows.Forms.PictureBox crossPictureBox;
+        private System.Windows.Forms.Timer timerMarathon;
     }
 }

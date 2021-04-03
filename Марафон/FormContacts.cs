@@ -16,5 +16,10 @@ namespace Марафон
         {
             InitializeComponent();
         }
+
+        private void FormContacts_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

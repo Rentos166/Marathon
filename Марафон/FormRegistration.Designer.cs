@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistration));
             this.openFileDialogMar = new System.Windows.Forms.OpenFileDialog();
             this.dateTimePickerBirth = new System.Windows.Forms.DateTimePicker();
             this.comboBoxCountry = new System.Windows.Forms.ComboBox();
@@ -530,7 +531,9 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormRegistration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Регистрация бегуна";
             this.Load += new System.EventHandler(this.FormRegistration_Load);
             this.panel2.ResumeLayout(false);

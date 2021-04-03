@@ -33,8 +33,8 @@ namespace Марафон
                 takeAgesAndGender();
                 connectionSql.Open();
 
-                string query = "SELECT [RegistrationId], [MarathonName] as 'Марафон', [EventTypeName] as 'Дистанция', CONVERT(nvarchar, CONVERT(datetime, [RaceTime]/100000.0), 8)  as 'Время', [RegistrationEventId] as 'Общее место'" +
-                    //$(select[RegistrationEventId], { minAge}, { maxAge}) as 'Место по категории'+
+                string query = "SELECT [RegistrationId], [MarathonName] as 'Марафон', [EventTypeName] as 'Дистанция', CONVERT(int, CONVERT(datetime, [RaceTime]/100000.0), 8)  as 'Время', [RegistrationEventId] as 'Общее место'" +
+                    //$"(select RegistrationEventId from RegistrationEvent where YEAR(GETDATE())-YEAR([Runner].[DateOfBirth]) < '{maxAge}' and YEAR(GETDATE())-YEAR([Runner].[DateOfBirth]) > '{minAge}') as 'Место по категории'" +
                     "FROM[RegistrationEvent] " +
                     "inner join[Event] on[RegistrationEvent].[EventId] = [Event].[EventId] " +
                     "inner join[Marathon] on Event.[MarathonId] = [Marathon].[MarathonId] " +
