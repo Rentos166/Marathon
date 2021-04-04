@@ -70,6 +70,9 @@ namespace Марафон
                     bn.Location = buttonEdit.Location;
                     bn.Text = "Edit";
                     bn.Font = buttonEdit.Font;
+                    bn.ForeColor = buttonEdit.ForeColor;
+                    bn.BackColor = buttonEdit.BackColor;
+                    bn.FlatStyle = buttonEdit.FlatStyle;
                     bn.Tag = reader["CharityId"].ToString();
                     bn.Click += (ee, aa) => {
                         //MessageBox.Show(bn.Tag.ToString());

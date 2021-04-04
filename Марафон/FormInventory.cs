@@ -141,7 +141,8 @@ namespace Марафон
 
         private void buttonReport_Click(object sender, EventArgs e)
         {
-            FormInventoryReport form = new FormInventoryReport();
+            FormInventory.ActiveForm.Hide();
+            FormInventoryReport form = new FormInventoryReport(email);
             form.idLeftLabel.Text = idLeftLabel.Text;
             form.idNeedLabel.Text = idNeedLabel.Text;
             form.rfidLeftLabel.Text = rfidLeftLabel.Text;

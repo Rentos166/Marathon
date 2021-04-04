@@ -68,13 +68,11 @@ namespace Марафон
             this.rfidLabel = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
             this.buttonPrint = new System.Windows.Forms.Button();
-            this.crossPictureBox = new System.Windows.Forms.PictureBox();
             this.timerMarathon = new System.Windows.Forms.Timer(this.components);
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel2.SuspendLayout();
             this.downPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.crossPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -94,7 +92,7 @@ namespace Марафон
             this.buttonLogout.BackColor = System.Drawing.Color.Gold;
             this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonLogout.Location = new System.Drawing.Point(673, 18);
+            this.buttonLogout.Location = new System.Drawing.Point(673, 29);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.Size = new System.Drawing.Size(102, 57);
             this.buttonLogout.TabIndex = 8;
@@ -107,7 +105,7 @@ namespace Марафон
             this.buttonBack.BackColor = System.Drawing.Color.Gold;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBack.Location = new System.Drawing.Point(19, 18);
+            this.buttonBack.Location = new System.Drawing.Point(19, 29);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(102, 57);
             this.buttonBack.TabIndex = 7;
@@ -546,16 +544,6 @@ namespace Марафон
             this.buttonPrint.UseVisualStyleBackColor = false;
             this.buttonPrint.Click += new System.EventHandler(this.buttonPrint_Click);
             // 
-            // crossPictureBox
-            // 
-            this.crossPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("crossPictureBox.Image")));
-            this.crossPictureBox.Location = new System.Drawing.Point(750, 161);
-            this.crossPictureBox.Name = "crossPictureBox";
-            this.crossPictureBox.Size = new System.Drawing.Size(27, 25);
-            this.crossPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.crossPictureBox.TabIndex = 304;
-            this.crossPictureBox.TabStop = false;
-            // 
             // timerMarathon
             // 
             this.timerMarathon.Tick += new System.EventHandler(this.timerMarathon_Tick);
@@ -566,7 +554,6 @@ namespace Марафон
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 560);
-            this.Controls.Add(this.crossPictureBox);
             this.Controls.Add(this.souvenirOrderLabel);
             this.Controls.Add(this.tshirtOrderLabel);
             this.Controls.Add(this.waterOrderLabel);
@@ -613,7 +600,6 @@ namespace Марафон
             this.panel2.PerformLayout();
             this.downPanel.ResumeLayout(false);
             this.downPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.crossPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -657,7 +643,6 @@ namespace Марафон
         private System.Windows.Forms.Label rfidLabel;
         private System.Windows.Forms.Label idLabel;
         private System.Windows.Forms.Button buttonPrint;
-        private System.Windows.Forms.PictureBox crossPictureBox;
         private System.Windows.Forms.Timer timerMarathon;
     }
 }

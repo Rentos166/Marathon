@@ -13,8 +13,9 @@ namespace Марафон
     public partial class FormInventoryReport : Form
     {
         public string email;
-        public FormInventoryReport()
+        public FormInventoryReport(string email)
         {
+            this.email = email;
             InitializeComponent();
         }
 
@@ -27,22 +28,22 @@ namespace Марафон
         {
             timerMarathon.Start();
             if (Convert.ToInt32(idLeftLabel.Text) - Convert.ToInt32(idNeedLabel.Text) < 0)
-                idOrderLabel.Text = (Convert.ToInt32(idLeftLabel.Text) - Convert.ToInt32(idNeedLabel.Text)).ToString();
+                idOrderLabel.Text = Convert.ToString((Convert.ToInt32(idLeftLabel.Text) - Convert.ToInt32(idNeedLabel.Text))*-1);
 
             if (Convert.ToInt32(rfidLeftLabel.Text) - Convert.ToInt32(rfidNeedLabel.Text) < 0)
-                rfidOrderLabel.Text = (Convert.ToInt32(rfidLeftLabel.Text) - Convert.ToInt32(rfidNeedLabel.Text)).ToString();
+                rfidOrderLabel.Text = Convert.ToString((Convert.ToInt32(rfidLeftLabel.Text) - Convert.ToInt32(rfidNeedLabel.Text))*-1);
 
             if (Convert.ToInt32(baseballLeftLabel.Text) - Convert.ToInt32(basebalNeedLabel.Text) < 0)
-                baseballOrderLabel.Text = (Convert.ToInt32(baseballLeftLabel.Text) - Convert.ToInt32(basebalNeedLabel.Text)).ToString();
+                baseballOrderLabel.Text = Convert.ToString((Convert.ToInt32(baseballLeftLabel.Text) - Convert.ToInt32(basebalNeedLabel.Text))*-1);
 
             if (Convert.ToInt32(waterLeftLabel.Text) - Convert.ToInt32(waterNeedLabel.Text) < 0)
-                waterOrderLabel.Text = (Convert.ToInt32(waterLeftLabel.Text) - Convert.ToInt32(waterNeedLabel.Text)).ToString();
+                waterOrderLabel.Text = Convert.ToString((Convert.ToInt32(waterLeftLabel.Text) - Convert.ToInt32(waterNeedLabel.Text))*-1);
 
             if (Convert.ToInt32(tshirtLeftLabel.Text) - Convert.ToInt32(tshirtNeedLabel.Text) < 0)
-                tshirtOrderLabel.Text = (Convert.ToInt32(tshirtLeftLabel.Text) - Convert.ToInt32(tshirtNeedLabel.Text)).ToString();
+                tshirtOrderLabel.Text = Convert.ToString((Convert.ToInt32(tshirtLeftLabel.Text) - Convert.ToInt32(tshirtNeedLabel.Text))*-1);
 
             if (Convert.ToInt32(souvenirLeftLabel.Text) - Convert.ToInt32(souvenirNeedLabel.Text) < 0)
-                souvenirOrderLabel.Text = (Convert.ToInt32(souvenirLeftLabel.Text) - Convert.ToInt32(souvenirNeedLabel.Text)).ToString();
+                souvenirOrderLabel.Text = Convert.ToString((Convert.ToInt32(souvenirLeftLabel.Text) - Convert.ToInt32(souvenirNeedLabel.Text))*-1);
         }
 
         private void buttonPrint_Click(object sender, EventArgs e)

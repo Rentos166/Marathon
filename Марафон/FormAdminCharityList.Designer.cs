@@ -352,7 +352,7 @@ namespace Марафон
             this.MinimumSize = new System.Drawing.Size(1016, 741);
             this.Name = "FormAdminCharityList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Список благотворительных организаций";
+            this.Text = "Управление благотворительными организациями";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAdminCharityList_FormClosing);
             this.Load += new System.EventHandler(this.FormAdminCharityList_Load);
             this.panel9.ResumeLayout(false);

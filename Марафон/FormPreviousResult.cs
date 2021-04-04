@@ -91,7 +91,7 @@ namespace Марафон
             try
             {
                 connectionSql.Open();
-                dataAdapter = new SqlDataAdapter("SELECT  CONVERT(nvarchar, CONVERT(datetime, dbo.RegistrationEvent.RaceTime/100000.0), 8) as 'Время', dbo.[Users].FirstName as 'Имя', dbo.Runner.CountryCode as 'Код страны' FROM dbo.[Users] INNER JOIN dbo.Registration INNER JOIN dbo.RegistrationEvent ON dbo.Registration.RegistrationId = dbo.RegistrationEvent.RegistrationId INNER JOIN dbo.EventType INNER JOIN dbo.Event ON dbo.EventType.EventTypeId = dbo.Event.EventTypeId INNER JOIN dbo.Marathon ON dbo.Event.MarathonId = dbo.Marathon.MarathonId ON dbo.RegistrationEvent.EventId = dbo.Event.EventId INNER JOIN dbo.Runner ON dbo.Registration.RunnerId = dbo.Runner.RunnerId INNER JOIN dbo.Gender ON dbo.Runner.Gender = dbo.Gender.Gender AND dbo.Runner.Gender = dbo.Gender.Gender ON dbo.Runner.Email = dbo.[Users].Email AND dbo.Runner.Email = dbo.[Users].Email WHERE RaceTime IS NOT NULL and RaceTime != 0 ORDER BY RaceTime ASC", connectionSql);
+                dataAdapter = new SqlDataAdapter("SELECT CONVERT(nvarchar, CONVERT(datetime, dbo.RegistrationEvent.RaceTime/100000.0), 8) as 'Время', dbo.[Users].FirstName as 'Имя', dbo.Runner.CountryCode as 'Код страны' FROM dbo.[Users] INNER JOIN dbo.Registration INNER JOIN dbo.RegistrationEvent ON dbo.Registration.RegistrationId = dbo.RegistrationEvent.RegistrationId INNER JOIN dbo.EventType INNER JOIN dbo.Event ON dbo.EventType.EventTypeId = dbo.Event.EventTypeId INNER JOIN dbo.Marathon ON dbo.Event.MarathonId = dbo.Marathon.MarathonId ON dbo.RegistrationEvent.EventId = dbo.Event.EventId INNER JOIN dbo.Runner ON dbo.Registration.RunnerId = dbo.Runner.RunnerId INNER JOIN dbo.Gender ON dbo.Runner.Gender = dbo.Gender.Gender AND dbo.Runner.Gender = dbo.Gender.Gender ON dbo.Runner.Email = dbo.[Users].Email AND dbo.Runner.Email = dbo.[Users].Email WHERE RaceTime IS NOT NULL and RaceTime != 0 ORDER BY RaceTime ASC", connectionSql);
                 DataSet dataSet = new DataSet();
                 dataAdapter.Fill(dataSet);
                 raceDataGrid.DataSource = dataSet.Tables[0];
@@ -114,6 +114,7 @@ namespace Марафон
 
         private void FormPreviousResult_Load(object sender, EventArgs e)
         {
+            
             timerMarathon.Start();
             loadMarathon();
             loadDistance();

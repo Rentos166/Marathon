@@ -33,7 +33,7 @@ namespace Марафон
             try
             {
                 connectionSql.Open();
-                dataAdapter = new SqlDataAdapter("SELECT dbo.Volunteer.VolunteerId, dbo.Country.CountryCode, dbo.Volunteer.LastName AS Фамилия, dbo.Volunteer.FirstName AS Имя, dbo.Country.CountryName AS Страна, dbo.Gender.Gender AS Пол FROM    dbo.Country INNER JOIN dbo.Volunteer ON dbo.Country.CountryCode = dbo.Volunteer.CountryCode INNER JOIN dbo.Gender ON dbo.Volunteer.Gender = dbo.Gender.Gender", connectionSql);
+                dataAdapter = new SqlDataAdapter("SELECT dbo.Volunteer.VolunteerId, dbo.Country.CountryCode, dbo.Volunteer.LastName AS 'Фамилия', dbo.Volunteer.FirstName AS 'Имя', dbo.Country.CountryName AS 'Страна', dbo.Volunteer.Gender AS 'Пол' FROM    dbo.Volunteer INNER JOIN dbo.Country ON dbo.Volunteer.CountryCode = dbo.Country.CountryCode", connectionSql);
                 DataSet dataSet = new DataSet();
                 dataAdapter.Fill(dataSet);
                 volunterDataGrid.DataSource = dataSet.Tables[0];
@@ -56,7 +56,7 @@ namespace Марафон
             timerMarathon.Start();
             loadVolunters();
         }
-
+        
         private void buttonBack_Click(object sender, EventArgs e)
         {
             FormMenuAdmin menuAdmin = new FormMenuAdmin(email);
@@ -85,13 +85,33 @@ namespace Марафон
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
+            string orderBy = "";
+            if (comboBoxSort.SelectedIndex == 0)
+            {
+                orderBy = "FirstName";
+            }
+            else if (comboBoxSort.SelectedIndex == 1)
+            {
+                orderBy = "LastName";
+            }
+            else if (comboBoxSort.SelectedIndex == 2)
+            {
+                orderBy = "CountryName";
+            }
+            else
+            {
+                orderBy = "Gender";
+            }
             try
             {
                 connectionSql.Open();
-                dataAdapter = new SqlDataAdapter($"SELECT dbo.Volunteer.VolunteerId, dbo.Country.CountryCode, dbo.Volunteer.LastName AS Фамилия, dbo.Volunteer.FirstName AS Имя, dbo.Country.CountryName AS Страна, dbo.Gender.Gender AS Пол FROM    dbo.Country INNER JOIN dbo.Volunteer ON dbo.Country.CountryCode = dbo.Volunteer.CountryCode INNER JOIN dbo.Gender ON dbo.Volunteer.Gender = dbo.Gender.Gender WHERE (dbo.Volunteer.FirstName like '%{comboBoxSort.Text}%' or dbo.Volunteer.LastName like '%{comboBoxSort.Text}%' or dbo.Volunteer.CountryName '%{comboBoxSort.Text}%'  or dbo.Volunteer.Gender like '%{comboBoxSort.Text}%'", connectionSql);
+                dataAdapter = new SqlDataAdapter($"SELECT dbo.Volunteer.VolunteerId, dbo.Country.CountryCode, dbo.Volunteer.LastName AS 'Фамилия', dbo.Volunteer.FirstName AS 'Имя', dbo.Country.CountryName AS 'Страна', dbo.Volunteer.Gender AS 'Пол' FROM    dbo.Volunteer INNER JOIN dbo.Country ON dbo.Volunteer.CountryCode = dbo.Country.CountryCode ORDER BY {orderBy} desc", connectionSql);
                 DataSet dataSet = new DataSet();
                 dataAdapter.Fill(dataSet);
                 volunterDataGrid.DataSource = dataSet.Tables[0];
+                volunterDataGrid.Columns[0].Visible = false;
+                volunterDataGrid.Columns[1].Visible = false;
+                labelNum.Text = dataSet.Tables[0].Rows.Count.ToString();
             }
             catch (Exception exception)
             {

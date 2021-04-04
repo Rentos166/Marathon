@@ -135,22 +135,63 @@ namespace Марафон
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            try
+            if (comboBoxSort.SelectedIndex == 0)
             {
-                connectionSql.Open();
-                dataAdapter = new SqlDataAdapter($"SELECT FirstName AS 'Имя', LastName AS 'Фамилия', Email AS 'Email', RoleName AS 'Роль' FROM [Role] inner join [Users] ON [Users].RoleId = [Role].RoleId WHERE (FirstName like '%{textBoxFind.Text}%' or LastName like '%{textBoxFind.Text}%' or Email like '%{textBoxFind.Text}%') and RoleName like '%{comboBoxRole.Text}%'", connectionSql);
-                DataSet dataSet = new DataSet();
-                dataAdapter.Fill(dataSet);
-                usersDataGrid.DataSource = dataSet.Tables[0];
+                try
+                {
+                    connectionSql.Open();
+                    dataAdapter = new SqlDataAdapter($"SELECT FirstName AS 'Имя', LastName AS 'Фамилия', Email AS 'Email', RoleName AS 'Роль' FROM [Role] inner join [Users] ON [Users].RoleId = [Role].RoleId WHERE (FirstName like '%{textBoxFind.Text}%' or LastName like '%{textBoxFind.Text}%' or Email like '%{textBoxFind.Text}%') and RoleName like '%{comboBoxRole.Text}%'", connectionSql);
+                    DataSet dataSet = new DataSet();
+                    dataAdapter.Fill(dataSet);
+                    usersDataGrid.DataSource = dataSet.Tables[0];
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.Message);
+                }
+                finally
+                {
+                    connectionSql.Close();
+                }
             }
-            catch (Exception exception)
+            else
             {
-                MessageBox.Show(exception.Message);
+                string orderBy = "";
+                if (comboBoxSort.SelectedIndex == 1)
+                {
+                    orderBy = "FirstName";
+                }
+                else if (comboBoxSort.SelectedIndex == 2)
+                {
+                    orderBy = "LastName";
+                }
+                else if (comboBoxSort.SelectedIndex == 3)
+                {
+                    orderBy = "Email";
+                }
+                else if (comboBoxSort.SelectedIndex == 4)
+                {
+                    orderBy = "RoleName";
+                }
+                try
+                {
+                    connectionSql.Open();
+                    dataAdapter = new SqlDataAdapter($"SELECT FirstName AS 'Имя', LastName AS 'Фамилия', Email AS 'Email', RoleName AS 'Роль' FROM [Role] inner join [Users] ON [Users].RoleId = [Role].RoleId WHERE (FirstName like '%{textBoxFind.Text}%' or LastName like '%{textBoxFind.Text}%' or Email like '%{textBoxFind.Text}%') and RoleName like '%{comboBoxRole.Text}%' ORDER BY {orderBy} desc", connectionSql);
+                    DataSet dataSet = new DataSet();
+                    dataAdapter.Fill(dataSet);
+                    usersDataGrid.DataSource = dataSet.Tables[0];
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.Message);
+                }
+                finally
+                {
+                    connectionSql.Close();
+                }
+
             }
-            finally
-            {
-                connectionSql.Close();
-            }
+            
         }
     }
 }

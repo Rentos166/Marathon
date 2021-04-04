@@ -323,7 +323,7 @@
             this.MinimumSize = new System.Drawing.Size(1016, 741);
             this.Name = "FormInteractiveMap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Карта марафона";
+            this.Text = "Интерактивная карта";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormInteractiveMap_FormClosing);
             this.Load += new System.EventHandler(this.FormInteractiveMap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();

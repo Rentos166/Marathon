@@ -181,7 +181,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormWhitchRunner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Проверка уже введенных бегунов";
+            this.Text = "Проверка уже введенных раньше бегунов";
             this.Load += new System.EventHandler(this.FormWhitchRunner_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

@@ -72,21 +72,21 @@ namespace Марафон
                         {                           
                             if (reader["RoleId"].ToString() == "R")
                             {
-                                //MessageBox.Show("Runner");
+                                MessageBox.Show("Вы вошли в систему, как бегун!", "Авторизация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 FormRunnerMenu fm = new FormRunnerMenu(reader["Email"].ToString());
                                 fm.Show();
                                 this.Hide();
                             }
                             if (reader["RoleId"].ToString() == "A")
                             {
-                                //MessageBox.Show("Runner");
+                                MessageBox.Show("Вы вошли в систему, как администратор!", "Авторизация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 FormMenuAdmin fm = new FormMenuAdmin(reader["Email"].ToString());
                                 fm.Show();
                                 this.Hide();
                             }
                             if (reader["RoleId"].ToString() == "C")
                             {
-                                //MessageBox.Show("Runner");
+                                MessageBox.Show("Вы вошли в систему, как координаторы!", "Авторизация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 FormCoordinator fm = new FormCoordinator(reader["Email"].ToString());
                                 fm.Show();
                                 this.Hide();

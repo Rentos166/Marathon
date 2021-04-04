@@ -151,15 +151,14 @@ namespace Марафон
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.descriptionLabel.ForeColor = System.Drawing.Color.White;
-            this.descriptionLabel.Location = new System.Drawing.Point(71, 50);
+            this.descriptionLabel.Location = new System.Drawing.Point(55, 62);
             this.descriptionLabel.Name = "descriptionLabel";
-            this.descriptionLabel.Size = new System.Drawing.Size(691, 72);
+            this.descriptionLabel.Size = new System.Drawing.Size(751, 50);
             this.descriptionLabel.TabIndex = 70;
             this.descriptionLabel.Text = "Это - список всех ваших прошлых результатов гонки для Marathom Skills.\r\nОбщее мес" +
-    "то сравнивает всех бегунов\r\nМесто по категории compares runners in the same gend" +
-    "er and age categories.\r\n";
+    "то сравнивает всех бегунов.\r\n";
             this.descriptionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // resultDataGrid
@@ -232,7 +231,7 @@ namespace Марафон
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label1.Location = new System.Drawing.Point(289, 13);
+            this.label1.Location = new System.Drawing.Point(289, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(262, 37);
             this.label1.TabIndex = 6;

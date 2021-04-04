@@ -77,9 +77,9 @@
             this.labelCity.ForeColor = System.Drawing.Color.GhostWhite;
             this.labelCity.Location = new System.Drawing.Point(354, 16);
             this.labelCity.Name = "labelCity";
-            this.labelCity.Size = new System.Drawing.Size(387, 31);
+            this.labelCity.Size = new System.Drawing.Size(405, 31);
             this.labelCity.TabIndex = 3;
-            this.labelCity.Text = "Кировская область, Россия";
+            this.labelCity.Text = "Московская область, Россия";
             // 
             // panelTime
             // 

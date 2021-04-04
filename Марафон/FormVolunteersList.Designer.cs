@@ -303,7 +303,7 @@ namespace Марафон
             this.MinimumSize = new System.Drawing.Size(1016, 741);
             this.Name = "FormVolunteersList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Волонтеры";
+            this.Text = "Управление волонтерами";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormVolunteersList_FormClosing);
             this.Load += new System.EventHandler(this.FormVolunteersList_Load);
             this.panel3.ResumeLayout(false);
