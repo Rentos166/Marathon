@@ -107,6 +107,7 @@ namespace Марафон
         {
             FormRunnerEditProfile runnerEditProfile = new FormRunnerEditProfile(email);
             runnerEditProfile.labelEmail.Text = emailUserLabel.Text;
+
             runnerEditProfile.Show();
             this.Hide();
         }

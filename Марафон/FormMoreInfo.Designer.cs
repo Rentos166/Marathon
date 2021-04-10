@@ -187,7 +187,7 @@
             this.buttonOldRes.Name = "buttonOldRes";
             this.buttonOldRes.Size = new System.Drawing.Size(360, 76);
             this.buttonOldRes.TabIndex = 20;
-            this.buttonOldRes.Text = "Предыдущие результаты";
+            this.buttonOldRes.Text = "Результаты прошедших гонок";
             this.buttonOldRes.UseVisualStyleBackColor = false;
             this.buttonOldRes.Click += new System.EventHandler(this.buttonOldRes_Click);
             // 

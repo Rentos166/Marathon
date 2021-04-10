@@ -34,14 +34,12 @@ namespace Марафон
             this.panel4 = new System.Windows.Forms.Panel();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.timerMarathon = new System.Windows.Forms.Timer(this.components);
             this.editProfileButton = new System.Windows.Forms.Button();
-            this.printButton = new System.Windows.Forms.Button();
             this.startLabel = new System.Windows.Forms.Label();
             this.packLabel = new System.Windows.Forms.Label();
             this.payLabel = new System.Windows.Forms.Label();
@@ -72,8 +70,8 @@ namespace Марафон
             this.packagePictureBox = new System.Windows.Forms.PictureBox();
             this.payPictureBox = new System.Windows.Forms.PictureBox();
             this.userPictureBox = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.regPictureBox)).BeginInit();
@@ -81,6 +79,7 @@ namespace Марафон
             ((System.ComponentModel.ISupportInitialize)(this.packagePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.payPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -120,16 +119,6 @@ namespace Марафон
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(157, 10);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(692, 92);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // panel3
             // 
@@ -191,20 +180,6 @@ namespace Марафон
             this.editProfileButton.UseVisualStyleBackColor = false;
             this.editProfileButton.Click += new System.EventHandler(this.editProfileButton_Click);
             // 
-            // printButton
-            // 
-            this.printButton.BackColor = System.Drawing.Color.Gold;
-            this.printButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.printButton.ForeColor = System.Drawing.Color.Black;
-            this.printButton.Location = new System.Drawing.Point(388, 580);
-            this.printButton.Name = "printButton";
-            this.printButton.Size = new System.Drawing.Size(241, 67);
-            this.printButton.TabIndex = 104;
-            this.printButton.Text = "Печать бейджа";
-            this.printButton.UseVisualStyleBackColor = false;
-            this.printButton.Click += new System.EventHandler(this.printButton_Click);
-            // 
             // startLabel
             // 
             this.startLabel.AutoSize = true;
@@ -250,7 +225,7 @@ namespace Марафон
             this.regLabel.Name = "regLabel";
             this.regLabel.Size = new System.Drawing.Size(171, 24);
             this.regLabel.TabIndex = 100;
-            this.regLabel.Text = "Зарегестрирован";
+            this.regLabel.Text = "Зарегистрирован";
             this.regLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // linePanel
@@ -487,6 +462,7 @@ namespace Марафон
             // 
             // regPictureBox
             // 
+            this.regPictureBox.Image = global::Марафон.Properties.Resources.cross_icon1;
             this.regPictureBox.Location = new System.Drawing.Point(823, 252);
             this.regPictureBox.Name = "regPictureBox";
             this.regPictureBox.Size = new System.Drawing.Size(55, 53);
@@ -496,6 +472,7 @@ namespace Марафон
             // 
             // startPictureBox
             // 
+            this.startPictureBox.Image = global::Марафон.Properties.Resources.cross_icon;
             this.startPictureBox.Location = new System.Drawing.Point(823, 465);
             this.startPictureBox.Name = "startPictureBox";
             this.startPictureBox.Size = new System.Drawing.Size(55, 53);
@@ -505,6 +482,7 @@ namespace Марафон
             // 
             // packagePictureBox
             // 
+            this.packagePictureBox.Image = global::Марафон.Properties.Resources.cross_icon;
             this.packagePictureBox.Location = new System.Drawing.Point(823, 396);
             this.packagePictureBox.Name = "packagePictureBox";
             this.packagePictureBox.Size = new System.Drawing.Size(55, 53);
@@ -514,6 +492,7 @@ namespace Марафон
             // 
             // payPictureBox
             // 
+            this.payPictureBox.Image = global::Марафон.Properties.Resources.cross_icon;
             this.payPictureBox.Location = new System.Drawing.Point(823, 327);
             this.payPictureBox.Name = "payPictureBox";
             this.payPictureBox.Size = new System.Drawing.Size(55, 53);
@@ -532,6 +511,16 @@ namespace Марафон
             this.userPictureBox.TabIndex = 93;
             this.userPictureBox.TabStop = false;
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(157, 10);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(692, 92);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // FormCoordinatorRunnerEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -540,7 +529,6 @@ namespace Марафон
             this.ClientSize = new System.Drawing.Size(990, 747);
             this.Controls.Add(this.regPictureBox);
             this.Controls.Add(this.editProfileButton);
-            this.Controls.Add(this.printButton);
             this.Controls.Add(this.startLabel);
             this.Controls.Add(this.packLabel);
             this.Controls.Add(this.payLabel);
@@ -579,11 +567,10 @@ namespace Марафон
             this.MinimumSize = new System.Drawing.Size(1006, 786);
             this.Name = "FormCoordinatorRunnerEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Измениние бегуна";
+            this.Text = "Управление бегунами";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCoordinatorRunnerEdit_FormClosing);
             this.Load += new System.EventHandler(this.FormCoordinatorRunnerEdit_Load);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -593,6 +580,7 @@ namespace Марафон
             ((System.ComponentModel.ISupportInitialize)(this.packagePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.payPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -611,7 +599,6 @@ namespace Марафон
         private System.Windows.Forms.Timer timerMarathon;
         private System.Windows.Forms.PictureBox regPictureBox;
         private System.Windows.Forms.Button editProfileButton;
-        private System.Windows.Forms.Button printButton;
         private System.Windows.Forms.Label startLabel;
         private System.Windows.Forms.Label packLabel;
         private System.Windows.Forms.Label payLabel;

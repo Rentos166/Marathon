@@ -50,15 +50,15 @@ namespace Марафон
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.usersDataGrid = new System.Windows.Forms.DataGridView();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.allNumberLabel = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersDataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -251,16 +251,6 @@ namespace Марафон
             this.panel4.Size = new System.Drawing.Size(1005, 102);
             this.panel4.TabIndex = 66;
             // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour1;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(706, 92);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
-            // 
             // usersDataGrid
             // 
             this.usersDataGrid.AllowUserToAddRows = false;
@@ -318,6 +308,16 @@ namespace Марафон
             this.allNumberLabel.TabIndex = 87;
             this.allNumberLabel.Text = "Статус";
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::Марафон.Properties.Resources.logo_2016_full_colour1;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(151, 4);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(706, 92);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // FormAdminUsersList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,7 +344,7 @@ namespace Марафон
             this.MinimumSize = new System.Drawing.Size(1016, 741);
             this.Name = "FormAdminUsersList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Пользователи";
+            this.Text = "Управление пользователями";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAdminUsersList_FormClosing);
             this.Load += new System.EventHandler(this.FormAdminUsersList_Load);
             this.panel3.ResumeLayout(false);
@@ -352,8 +352,8 @@ namespace Марафон
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

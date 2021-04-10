@@ -414,7 +414,7 @@ namespace Марафон
             this.MinimumSize = new System.Drawing.Size(1016, 741);
             this.Name = "FormEditUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Изменение пользователей";
+            this.Text = "Редактирование пользователей";
             this.Load += new System.EventHandler(this.FormEditUser_Load);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();

@@ -366,7 +366,7 @@ namespace Марафон
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormPreviousResult";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Предыдущие результаты";
+            this.Text = "Результаты прошедших гонок";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormPreviousResult_FormClosing);
             this.Load += new System.EventHandler(this.FormPreviousResult_Load);
             this.panel3.ResumeLayout(false);

@@ -133,6 +133,16 @@ namespace Марафон.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cross_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("cross-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap female_icon {
             get {
                 object obj = ResourceManager.GetObject("female-icon", resourceCulture);

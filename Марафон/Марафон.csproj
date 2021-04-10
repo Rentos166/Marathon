@@ -613,5 +613,8 @@
   <ItemGroup>
     <None Include="Resources\tick-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-icon1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
