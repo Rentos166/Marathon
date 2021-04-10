@@ -54,8 +54,8 @@ namespace Марафон
 
         private void buttonRegforMar_Click(object sender, EventArgs e)
         {
-            FormRegistration registration = new FormRegistration();
-            registration.Show();
+            FormRegistrationMarathon registrationMarathon = new FormRegistrationMarathon(email);
+            registrationMarathon.Show();
             this.Hide();
         }
 
