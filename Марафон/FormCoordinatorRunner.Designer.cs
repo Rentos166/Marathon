@@ -149,11 +149,11 @@ namespace Марафон
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(232, 17);
+            this.label1.Location = new System.Drawing.Point(286, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(552, 39);
+            this.label1.Size = new System.Drawing.Size(414, 39);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Предыдущие результаты гонок";
+            this.label1.Text = "Информация о бегунах";
             // 
             // timerMarathon
             // 

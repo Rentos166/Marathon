@@ -331,7 +331,7 @@ namespace Марафон
             this.MinimumSize = new System.Drawing.Size(1006, 786);
             this.Name = "FormCertificate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Сертификат бегуна";
+            this.Text = "Показ сертификата ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCertificate_FormClosing);
             this.Load += new System.EventHandler(this.FormCertificate_Load);
             this.panel4.ResumeLayout(false);

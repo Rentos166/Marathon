@@ -322,7 +322,7 @@ namespace Марафон
             this.MinimumSize = new System.Drawing.Size(866, 768);
             this.Name = "FormCoordinatorSponsors";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Спонсоры";
+            this.Text = "Обзор спонсоров";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCoordinatorSponsors_FormClosing);
             this.Load += new System.EventHandler(this.FormCoordinatorSponsors_Load);
             this.panel4.ResumeLayout(false);
